@@ -1,5 +1,10 @@
 Add/Edit this file as you see fit
 
+To Do:
+	Determine final wireframe
+	Finalize textual content
+	Prepare for styling and javascript
+
 To Add:
 	Course Tools:
 		Firefox
