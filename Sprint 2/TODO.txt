@@ -1,0 +1,39 @@
+Add/Edit this file as you see fit
+
+To Add:
+	Course Tools:
+		Firefox
+			Firebug
+		Chrome
+		Safari
+		Notepad++
+		FileZilla
+		Git
+		GIMP
+	
+	HTML Resources:
+		Notepad++
+		w3schools.com
+		stackoverflow.com
+		
+	CSS Resources:
+		w3schools.com
+		
+	JavaScript Resources:
+		w3schools.com
+		stackoverflow.com
+		
+	Project Management Resources:
+		Git
+		Google Sites
+		
+	Course Information:
+		Syllabus
+		IMD Description
+		Course Description
+		
+	Portfolios:
+	
+	Publishing:
+	
+	Center for Serious Play:
