@@ -1,0 +1,58 @@
+@font-face{
+  src: url("Fonts/PTS55F.ttf");
+	font-family: "PTSans";
+}
+
+*{
+	position: relative;
+	top: 0px;
+	left: 0px;
+	
+	font-family: "PTSans";
+}
+a{
+	color:#4D70DB;
+	text-decoration:none;	
+}
+a:hover{
+	color:#998599;
+}
+
+div#mainHeader{
+	height: 400px;
+}
+div#mainHeader > div.title *{
+	float:left; 
+}
+nav.dropDown div{
+	width: 100%;
+}
+nav.dropDown > div.topLevel > div.dropContainer{
+	top:40px; 
+}
+nav.dropDown > div.topLevel > div.dropContainer div.dropContainer{
+	left:200px;
+}
+nav.dropDown > div.topLevel{
+	float: left;
+	
+	width:200px;
+	
+	text-align:center;
+	line-height:40px;
+}
+nav.dropDown > div.topLevel div.dropContainer{
+	position:absolute; 
+
+	display: none;
+}
+nav.dropDown div:hover > div.dropContainer{
+	display: block;
+}
+nav.dropDown div.dropItem{
+	position: relative;
+	top: 0px;
+	left: 0px;
+
+	display: block;
+}
