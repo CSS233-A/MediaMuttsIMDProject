@@ -19,13 +19,15 @@ To Add:
 	HTML Resources:
 		Notepad++
 		w3schools.com
-		stackoverflow.com
+		developers.mozilla.org
 		
 	CSS Resources:
 		w3schools.com
+		developers.mozilla.org
 		
 	JavaScript Resources:
 		w3schools.com
+		developers.mozilla.org
 		stackoverflow.com
 		
 	Project Management Resources:
@@ -42,3 +44,8 @@ To Add:
 	Publishing:
 	
 	Center for Serious Play:
+	
+	Books:
+		Eloquent Javascript (1E 11) Haverbeke
+		HTML5 Multimedia : Develop and Design (1E 11) Devlin
+		HTML5 Multimedia Development Cookbook (1E 11) Cruse
