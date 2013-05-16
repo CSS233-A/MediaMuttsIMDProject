@@ -26,11 +26,11 @@ body
 	background-image: url("Pictures/Backgrounds/whiteCanvas.jpg");
 }
 a{
-	color:#edda0c;
+	color:#e3e3e3;
 	text-decoration:none;	
 }
 a:hover{
-	color:#ffffff;
+	color:#edda0c;
 }
 
 /*
@@ -38,9 +38,8 @@ a:hover{
  *
  */
 body > div.mainWrapper{
-	width: 98%;
+	width: 100%;
 	
-	margin: 1%;
 	margin-top: 10px;
 	margin-bottom: 10px;
 }
@@ -49,6 +48,19 @@ body > div.mainWrapper > div{
 	
 	margin: auto;
 }
+body > div.mainWrapper > div.navBackground
+{
+	position: absolute;
+	top: auto;
+	bottom: 0px;
+
+	width: 100%;
+	height: 50px;
+	
+	margin: 0px;
+	
+	z-index: 1;
+}
 
 /*
  *	Main Header
@@ -56,14 +68,23 @@ body > div.mainWrapper > div{
  */
 div#mainHeader
 {
-	height: 125px;
+	height: 160px;
 }
 div#mainHeader > *
 {
 	float: left;
 }
+div#mainHeader > div.UWBLogo img
+{
+	width: 100%;
+	
+	box-shadow: 4px 4px 10px 3px #000000;
+}
 div#mainHeader > div.title{
 	float: left;
+	
+	margin-top: 40px;
+	margin-left: 20px;
 
 	overflow: auto;
 }
@@ -91,25 +112,27 @@ div#mainHeader > nav.dropDown
 	
 	padding-left: 10%;
 	
-	background-color: #642a75;
+	z-index: 2;
 	
-	border-radius: 10px;
+	/*background-color: #593d8d;
+	
+	border-radius: 10px;*/
 }
 div#mainHeader > nav.dropDown div.dropContainer
 {
-	background-color: #642a75;	
+	background-color: #492d6d;
 	
 	border-color: #663c77;
 }
 div#mainHeader > nav.dropDown div.dropItem
 {
-	border-color: #663c77;
+	border-color: #797d8d;
 }
 div#mainHeader > div.searchBox
 {
 	float: right;
 	
-	margin-top: 40px;
+	margin-top: 70px;
 }
 div#mainHeader > div.searchBox > form > input
 {
@@ -166,13 +189,17 @@ nav.dropDown div.dropItem{
 nav.dropDown div.dropItem:hover > a,
 nav.dropDown div.topLevel:hover > a
 {
-	color:#ffffff;
+	color:#edda0c;
 }
 
+div.grandSlideShow
+{
+	box-shadow: 4px 4px 10px 0px #000000;
+}
 div.grandSlideShow > div.slides > div.description,
 div.grandSlideShow > div.wrapper
 {
-	background-color: rgba(68, 26, 85, .7);
+	background-color: rgba(44, 44, 44, .8);
 }
 
 div.columnWrapper
@@ -180,10 +207,9 @@ div.columnWrapper
 	float: left;
 
 	width: 31%;
-	height: 400px;
+	height: 500px;
 	
 	padding: 1%;
-	margin-top: 1%;
 }
 div.columnWrapper > section
 {
@@ -192,6 +218,8 @@ div.columnWrapper > section
 
 div#mainFooter
 {
+	top: 20px;
+
 	padding-top: 10px;
 	padding-bottom: 10px;
 	
@@ -220,7 +248,37 @@ div#mainFooter img
 	max-height: 50px;
 }
 
+.center
+{
+	width: 100%;
+	
+	text-align: center;
+}
+
+.columnsHeader
+{
+	margin-top: 10px;
+	padding-top: 20px;
+	padding-bottom: 20px;
+	
+	font-size: 24px;
+	
+	border-bottom: 1px solid #999999;
+}
+
+.centerColumn
+{
+	border-left: 1px solid #999999;
+	border-right: 1px solid #999999;
+}
+
 .backgroundColor
 {
-	background-color: rgba(44, 44, 44, .8);
+	background-color: #593d8d;
+	
+	color: #ffffff;
+}
+.emphasizedBackgroundColor
+{
+	background-color: #492d6d;
 }
