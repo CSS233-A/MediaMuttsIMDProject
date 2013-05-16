@@ -40,7 +40,7 @@ a:hover{
 body > div.mainWrapper{
 	width: 100%;
 	
-	margin-top: 10px;
+	margin-top: 20px;
 	margin-bottom: 10px;
 }
 body > div.mainWrapper > div{
@@ -218,18 +218,10 @@ div.columnWrapper > section
 
 div#mainFooter
 {
-	top: 20px;
-
 	padding-top: 10px;
 	padding-bottom: 10px;
 	
 	color: #ffffff;
-
-	background-color: #441a55;
-	
-	border-radius: 10px;
-	border-bottom-left-radius: 0px;
-	border-bottom-right-radius: 0px;
 	
 	overflow: auto;
 }

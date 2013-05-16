@@ -170,43 +170,58 @@ function GrandSlideShow(containerElement, transition)
 		else
 			this.slideIndicators[this.slideIndicators.length - 1].src = this.slideIndicators[this.slideIndicators.length - 1].off;
 			
-		this.slideIndicators[this.slideIndicators.length - 1].onmouseover = function()
-		{
-			if (!this.isOn)
-				this.src = this.on;
-				
-			this.isHovering = true;
-		}
-		
-		this.slideIndicators[this.slideIndicators.length - 1].onmouseout = function()
-		{
-			if (!this.isOn)
-				this.src = this.off;
-				
-			this.isHovering = false;
-		}
-		
-		this.slideIndicators[this.slideIndicators.length - 1].onmousedown = function()
-		{
-			if (this.index != this.parentObject.slides.currentSlide)
+		this.slideIndicators[this.slideIndicators.length - 1].addEventListener(
+			"mouseover", 
+			function()
 			{
-				this.parentObject.slides.nextSlide = this.index;
-				this.parentObject.currentWaitTicks = this.parentObject.waitTicks;
-			}
-		}
+				if (!this.isOn)
+					this.src = this.on;
+					
+				this.isHovering = true;
+			},
+			true);
+		
+		this.slideIndicators[this.slideIndicators.length - 1].addEventListener(
+			"mouseout", 
+			function()
+			{
+				if (!this.isOn)
+					this.src = this.off;
+					
+				this.isHovering = false;
+			},
+			true);
+		
+		this.slideIndicators[this.slideIndicators.length - 1].addEventListener(
+			"mousedown", 
+			function()
+			{
+				if (this.index != this.parentObject.slides.currentSlide)
+				{
+					this.parentObject.slides.nextSlide = this.index;
+					this.parentObject.currentWaitTicks = this.parentObject.waitTicks;
+				}
+			},
+			true);
 		
 		temp.appendChild(this.slideIndicators[this.slideIndicators.length - 1]);
 	}
 	//End of slide indicators
 	
-	this.slides.container.onmouseover = function()
-	{
-		this.parentObject.isPaused = true;
-	}
-	this.slides.container.onmouseout = function()
-	{
-		this.parentObject.isPaused = false;
-	}
+	this.slides.container.addEventListener(
+		"mouseover", 
+		function()
+		{
+			this.parentObject.isPaused = true;
+		},
+		true);
+	this.slides.container.addEventListener(
+		"mouseout", 
+		function()
+		{
+			this.parentObject.isPaused = false;
+		},
+		true);
 }
 GrandSlideShow.prototype.process = function()
 {

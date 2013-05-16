@@ -31,7 +31,7 @@
 			<div class = "searchBox">
 				<form>
 					<label for = "searchField">Search</label>
-					<input name = "searchField" type = "search" value = "Search" /> 
+					<input id = "searchBox" name = "searchField" type = "search" value = "Search" /> 
 				</form><!-- end of form -->
 			</div><!-- end of div.searchBox -->
 			
@@ -45,21 +45,16 @@
 						</div><!-- end of div.dropItem -->
 						
 						<div class = "dropItem">
-							<a href = "#">Syllabus</a>
+							<a href = "CSS233Syllabus.pdf" target = "_blank">Syllabus</a>
 						</div><!-- end of div.dropItem -->
 						
 						<div class = "dropItem">
-							<a href = "#">Required Text</a>
+							<a href = "#">Required Text Books</a>
 						</div><!-- end of div.dropItem -->
 						
 						<div class = "dropItem">
 							<a href = "#">Learning Goals</a>
 						</div><!-- end of div.dropItem -->
-						
-						<div class = "dropItem">
-							<a href = "#">Link Placeholder</a>
-						</div><!-- end of div.dropItem -->
-
 					</div><!-- end of div.dropContainer -->
 				</div><!-- end of div.topLevel -->
 				<div class = "topLevel">
@@ -71,15 +66,15 @@
 							
 							<div class = "dropContainer">
 								<div class = "dropItem">
-									<a href = "#">W3Schools</a>
+									<a href = "http://w3schools.com" target = "_blank">W3Schools</a>
 								</div><!-- end of div.dropItem-->
 								
 								<div class = "dropItem">
-									<a href = "#">Mozilla Developer Network</a>
+									<a href = "http://developer.mozilla.org" target = "_blank">Mozilla Developer Network</a>
 								</div><!-- end of div.dropItem-->
 								
 								<div class = "dropItem">
-									<a href = "#">Stack Overflow</a>
+									<a href = "http://stackoverflow.com" target = "_blank">Stack Overflow</a>
 								</div><!-- end of div.dropItem-->
 							</div><!-- end of div.dropContainer -->						
 						</div><!-- end of div.dropItem -->
@@ -89,7 +84,7 @@
 							
 							<div class = "dropContainer">
 								<div class = "dropItem">
-									<a href = "#">Git</a>
+									<a href = "http://github.com/" target = "_blank">Git</a>
 								</div><!-- end of div.dropItem-->
 								
 								<div class = "dropItem">
@@ -103,15 +98,15 @@
 								
 							<div class = "dropContainer">
 								<div class = "dropItem">
-									<a href = "#">Chrome</a>
+									<a href = "https://www.google.com/intl/en/chrome/browser/" target = "_blank">Chrome</a>
 								</div><!-- end of div.dropItem-->
 								
 								<div class = "dropItem">
-									<a href = "#">Firefox</a>
+									<a href = "http://www.mozilla.org/en-US/firefox/new/" target = "_blank">Firefox</a>
 								</div><!-- end of div.dropItem-->
 								
 								<div class = "dropItem">
-									<a href = "#">Safari</a>
+									<a href = "http://www.apple.com/safari/" target = "_blank">Safari</a>
 								</div><!-- end of div.dropItem-->
 							</div><!-- end of div.dropContainer -->						
 						</div><!-- end of div.dropItem -->
@@ -121,11 +116,11 @@
 							
 							<div class = "dropContainer">
 								<div class = "dropItem">
-									<a href = "#">Filezilla (FTP)</a>
+									<a href = "https://filezilla-project.org/download.php?type=client" target = "_blank">FileZilla (FTP)</a>
 								</div><!-- end of div.dropItem-->
 								
 								<div class = "dropItem">
-									<a href = "#">Notepad++ (Text Editor)</a>
+									<a href = "http://notepad-plus-plus.org/download/v6.3.3.html" target = "_blank">Notepad++ (Text Editor)</a>
 								</div><!-- end of div.dropItem-->
 								
 							</div><!-- end of div.dropContainer -->						
@@ -165,7 +160,7 @@
 		</div><!-- end of div#mainHeader -->
 	</div><!-- end of div.mainWrapper -->
 	
-	<div class = "mainWrapper" style = "margin-top: 10px;">
+	<div class = "mainWrapper" style = "margin-top: 10px; overflow: auto;">
 		<div id = "mainContent">
 			<div id = "mainSlideShow" class = "grandSlideShow">
 				<div class = "slides">
@@ -266,7 +261,9 @@
 		</div><!-- end of div#mainContent -->
 	</div><!-- end of div.mainWrapper -->
 	
-	<div class = "mainWrapper" style = "margin-bottom: 0px;">
+	<div class = "mainWrapper backgroundColor" style = "margin-bottom: 0px;">
+		<div class = "finePrintBackground emphasizedBackgroundColor"></div>
+		
 		<div id = "mainFooter">
 			<!--<div class = "mediaMuttLogo">
 				<img src = "Pictures/Logos/logoExtraSmall.png" alt = "Media Mutt" />
