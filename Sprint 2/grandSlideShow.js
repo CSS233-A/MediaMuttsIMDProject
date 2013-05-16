@@ -162,8 +162,8 @@ function GrandSlideShow(containerElement, transition)
 		this.slideIndicators[this.slideIndicators.length - 1].index = this.slideIndicators.length - 1;
 		this.slideIndicators[this.slideIndicators.length - 1].isOn = false;
 		this.slideIndicators[this.slideIndicators.length - 1].isHovering = false;
-		this.slideIndicators[this.slideIndicators.length - 1].on = "Pictures/Grand Slide Show/Temp/slideIndicatorOn.png";
-		this.slideIndicators[this.slideIndicators.length - 1].off = "Pictures/Grand Slide Show/Temp/slideIndicatorOff.png";
+		this.slideIndicators[this.slideIndicators.length - 1].on = "Pictures/Grand Slide Show/slideIndicatorOn.png";
+		this.slideIndicators[this.slideIndicators.length - 1].off = "Pictures/Grand Slide Show/slideIndicatorOff.png";
 		
 		if (this.slideIndicators.length == 1)
 			this.slideIndicators[this.slideIndicators.length - 1].src = this.slideIndicators[this.slideIndicators.length - 1].on;

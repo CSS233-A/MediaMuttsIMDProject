@@ -7,257 +7,268 @@
 	
 	<title>UWB | CSS 233 Interactive Media Technologies</title>
 	
-	<link type="text/css" rel="stylesheet" href="index.css" /> 
+	<link type = "text/css" rel = "stylesheet" href = "grandSlideShow.css" />
+	<link type = "text/css" rel = "stylesheet" href = "index.css" />
+	
+	<script type = "text/javascript" src = "index.js"></script>
+	<script type = "text/javascript" src = "speedVector.js"></script>
+	<script type = "text/javascript" src = "grandSlideShow.js"></script>
 </head>
-<body>
-	<div id = "mainHeader">
-		<div class = "UWBLogo">
-			<img src = "UWBLogoGoesHere.jpg" alt = "University of Washington Bothell" />
-		</div><!-- end of div.UWBLogo -->
-		
-		<div class = "title">
-			<h1>CSS 233</h1>
-			<h2>Interactive Media Technologies</h2>
-		</div><!-- end of div.title -->
-		
-		<div class = "searchBox">
-			<form>
-				<label for = "searchField">Search</label>
-				<input name = "searchField" type = "search" value = "Search" /> 
-			</form><!-- end of form -->
-		</div><!-- end of div.searchBox -->
-		
-		<nav class = "dropDown">
-			<div class = "topLevel">
-				<a href = "#">Course Information</a>
-				
-				<div class = "dropContainer">
-					<div class = "dropItem">
-						<a href = "#">Description</a>	
-					</div><!-- end of div.dropItem -->
+<body onload = "initialize();">
+	<div class = "mainWrapper" style = "z-index: 2;">
+		<div id = "mainHeader">
+			<!--<div class = "UWBLogo">
+				<img src = "UWBLogoGoesHere.jpg" alt = "University of Washington Bothell" />
+			</div><!-- end of div.UWBLogo -->
+			
+			<div class = "title">
+				<h1>CSS 233</h1>
+				<h2>Interactive Media Technologies</h2>
+			</div><!-- end of div.title -->
+			
+			<div class = "searchBox">
+				<form>
+					<label for = "searchField">Search</label>
+					<input name = "searchField" type = "search" value = "Search" /> 
+				</form><!-- end of form -->
+			</div><!-- end of div.searchBox -->
+			
+			<nav class = "dropDown">
+				<div class = "topLevel">
+					<a href = "#">Course Information</a>
 					
-					<div class = "dropItem">
-						<a href = "#">Syllabus</a>
-					</div><!-- end of div.dropItem -->
-					
-					<div class = "dropItem">
-						<a href = "#">Required Text</a>
-					</div><!-- end of div.dropItem -->
-					
-					<div class = "dropItem">
-						<a href = "#">Learning Goals</a>
-					</div><!-- end of div.dropItem -->
-					
-					<div class = "dropItem">
-						<a href = "#">Link Placeholder</a>
-					</div><!-- end of div.dropItem -->
+					<div class = "dropContainer">
+						<div class = "dropItem">
+							<a href = "#">Description</a>	
+						</div><!-- end of div.dropItem -->
+						
+						<div class = "dropItem">
+							<a href = "#">Syllabus</a>
+						</div><!-- end of div.dropItem -->
+						
+						<div class = "dropItem">
+							<a href = "#">Required Text</a>
+						</div><!-- end of div.dropItem -->
+						
+						<div class = "dropItem">
+							<a href = "#">Learning Goals</a>
+						</div><!-- end of div.dropItem -->
+						
+						<div class = "dropItem">
+							<a href = "#">Link Placeholder</a>
+						</div><!-- end of div.dropItem -->
 
-				</div><!-- end of div.dropContainer -->
-			</div><!-- end of div.topLevel -->
-			<div class = "topLevel">
-				<a href = "#">Course Resources</a>
-				
-				<div class = "dropContainer">
-					<div class = "dropItem">
-						<a href = "#">Development References</a>
-						
-						<div class = "dropContainer">
-							<div class = "dropItem">
-								<a href = "#">W3Schools</a>
-							</div><!-- end of div.dropItem-->
-							
-							<div class = "dropItem">
-								<a href = "#">Mozilla Developer Network</a>
-							</div><!-- end of div.dropItem-->
-							
-							<div class = "dropItem">
-								<a href = "#">Stack Overflow</a>
-							</div><!-- end of div.dropItem-->
-						</div><!-- end of div.dropContainer -->						
-					</div><!-- end of div.dropItem -->
+					</div><!-- end of div.dropContainer -->
+				</div><!-- end of div.topLevel -->
+				<div class = "topLevel">
+					<a href = "#">Course Resources</a>
 					
-					<div class = "dropItem">
-						<a href = "#">Management Tools</a>
+					<div class = "dropContainer">
+						<div class = "dropItem">
+							<a href = "#">Development References</a>
+							
+							<div class = "dropContainer">
+								<div class = "dropItem">
+									<a href = "#">W3Schools</a>
+								</div><!-- end of div.dropItem-->
+								
+								<div class = "dropItem">
+									<a href = "#">Mozilla Developer Network</a>
+								</div><!-- end of div.dropItem-->
+								
+								<div class = "dropItem">
+									<a href = "#">Stack Overflow</a>
+								</div><!-- end of div.dropItem-->
+							</div><!-- end of div.dropContainer -->						
+						</div><!-- end of div.dropItem -->
 						
-						<div class = "dropContainer">
-							<div class = "dropItem">
-								<a href = "#">Git</a>
-							</div><!-- end of div.dropItem-->
+						<div class = "dropItem">
+							<a href = "#">Management Tools</a>
 							
-							<div class = "dropItem">
-								<a href = "#">Google Sites</a>
-							</div><!-- end of div.dropItem-->
-						</div><!-- end of div.dropContainer -->						
-					</div><!-- end of div.dropItem -->
-					
-					<div class = "dropItem">
-						<a href = "#">Web Browsers</a>
-							
-						<div class = "dropContainer">
-							<div class = "dropItem">
-								<a href = "#">Chrome</a>
-							</div><!-- end of div.dropItem-->
-							
-							<div class = "dropItem">
-								<a href = "#">Firefox</a>
-							</div><!-- end of div.dropItem-->
-							
-							<div class = "dropItem">
-								<a href = "#">Safari</a>
-							</div><!-- end of div.dropItem-->
-						</div><!-- end of div.dropContainer -->						
-					</div><!-- end of div.dropItem -->
-					
-					<div class = "dropItem">
-						<a href = "#">Required Programs</a>	
+							<div class = "dropContainer">
+								<div class = "dropItem">
+									<a href = "#">Git</a>
+								</div><!-- end of div.dropItem-->
+								
+								<div class = "dropItem">
+									<a href = "#">Google Sites</a>
+								</div><!-- end of div.dropItem-->
+							</div><!-- end of div.dropContainer -->						
+						</div><!-- end of div.dropItem -->
 						
-						<div class = "dropContainer">
-							<div class = "dropItem">
-								<a href = "#">Filezilla (FTP)</a>
-							</div><!-- end of div.dropItem-->
-							
-							<div class = "dropItem">
-								<a href = "#">Notepad++ (Text Editor)</a>
-							</div><!-- end of div.dropItem-->
-							
-						</div><!-- end of div.dropContainer -->						
-					</div><!-- end of div.dropItem -->
-					
-					 <div class = "dropItem">
-						<a href = "#">Setting Up</a>
+						<div class = "dropItem">
+							<a href = "#">Web Browsers</a>
+								
+							<div class = "dropContainer">
+								<div class = "dropItem">
+									<a href = "#">Chrome</a>
+								</div><!-- end of div.dropItem-->
+								
+								<div class = "dropItem">
+									<a href = "#">Firefox</a>
+								</div><!-- end of div.dropItem-->
+								
+								<div class = "dropItem">
+									<a href = "#">Safari</a>
+								</div><!-- end of div.dropItem-->
+							</div><!-- end of div.dropContainer -->						
+						</div><!-- end of div.dropItem -->
 						
-						<div class = "dropContainer">
-							<div class = "dropItem">
-								<a href = "#"> Your Web Space</a>
-							</div><!-- end of div.dropItem-->
+						<div class = "dropItem">
+							<a href = "#">Required Programs</a>	
 							
-						</div><!-- end of div.dropContainer -->							
-					</div><!-- end of div.dropItem -->
-				</div><!-- end of div.dropContainer -->
-			</div><!-- end of div.topLevel -->
-			<div class = "topLevel">
-				<a href = "#">Project Management</a>
-				
-				<div class = "dropContainer">
-					<div class = "dropItem">
-						<a href = "#">Drop Item</a>
-					</div><!-- end of div.dropItem -->
-				</div><!-- end of div.dropContainer -->
-			</div><!-- end of div.topLevel -->
-			<div class = "topLevel">
-				<a href = "#">Media Mutt Community</a>
-				
-				<div class = "dropContainer">
-					<div class = "dropItem">
-						<a href = "#">Drop Item</a>
-					</div><!-- end of div.dropItem -->
-				</div><!-- end of div.dropContainer -->
-			</div><!-- end of div.topLevel -->
-		</nav><!-- end of nav.dropDown -->
-	</div><!-- end of div#mainHeader -->
+							<div class = "dropContainer">
+								<div class = "dropItem">
+									<a href = "#">Filezilla (FTP)</a>
+								</div><!-- end of div.dropItem-->
+								
+								<div class = "dropItem">
+									<a href = "#">Notepad++ (Text Editor)</a>
+								</div><!-- end of div.dropItem-->
+								
+							</div><!-- end of div.dropContainer -->						
+						</div><!-- end of div.dropItem -->
+						
+						 <div class = "dropItem">
+							<a href = "#">Setting Up</a>
+							
+							<div class = "dropContainer">
+								<div class = "dropItem">
+									<a href = "#"> Your Web Space</a>
+								</div><!-- end of div.dropItem-->
+								
+							</div><!-- end of div.dropContainer -->							
+						</div><!-- end of div.dropItem -->
+					</div><!-- end of div.dropContainer -->
+				</div><!-- end of div.topLevel -->
+				<div class = "topLevel">
+					<a href = "#">Project Management</a>
+					
+					<div class = "dropContainer">
+						<div class = "dropItem">
+							<a href = "#">Drop Item</a>
+						</div><!-- end of div.dropItem -->
+					</div><!-- end of div.dropContainer -->
+				</div><!-- end of div.topLevel -->
+				<div class = "topLevel">
+					<a href = "#">Media Mutt Community</a>
+					
+					<div class = "dropContainer">
+						<div class = "dropItem">
+							<a href = "#">Drop Item</a>
+						</div><!-- end of div.dropItem -->
+					</div><!-- end of div.dropContainer -->
+				</div><!-- end of div.topLevel -->
+			</nav><!-- end of nav.dropDown -->
+		</div><!-- end of div#mainHeader -->
+	</div><!-- end of div.mainWrapper -->
 	
-	<div id = "mainContent">
-		<div id = "mainSlideShow" class = "grandSlideShow">
-			<div class = "slides">
-				<img class = "slide" src = "Pictures/Slide Show/1.jpg" alt = "" />
-				<img class = "slide" src = "Pictures/Slide Show/2.jpg" alt = "" />
-				<img class = "slide" src = "Pictures/Slide Show/3.jpg" alt = "" />
-				<img class = "slide" src = "Pictures/Slide Show/2.jpg" alt = "" />
-				<img class = "slide" src = "Pictures/Slide Show/1.jpg" alt = "" />
-				<div class = "description">
-					This is a test description
+	<div class = "mainWrapper" style = "margin-top: 10px;">
+		<div id = "mainContent">
+			<div id = "mainSlideShow" class = "grandSlideShow">
+				<div class = "slides">
+					<img class = "slide" src = "Pictures/Slide Show/1.jpg" alt = "" />
+					<img class = "slide" src = "Pictures/Slide Show/2.jpg" alt = "" />
+					<img class = "slide" src = "Pictures/Slide Show/3.jpg" alt = "" />
+					<img class = "slide" src = "Pictures/Slide Show/2.jpg" alt = "" />
+					<img class = "slide" src = "Pictures/Slide Show/1.jpg" alt = "" />
+					<div class = "description">
+						This is a test description
+					</div>
+					<div class = "description">
+						This is a testadf af adsf description
+					</div>
+					<div class = "description">
+						This is a test 444444 description
+					</div>
+					<div class = "description">
+						This is a test dfadsrfadfadsf description
+					</div>
+					<div class = "description">
+						This is a test jklikjlkl;u;kl description
+					</div>
 				</div>
-				<div class = "description">
-					This is a testadf af adsf description
-				</div>
-				<div class = "description">
-					This is a test 444444 description
-				</div>
-				<div class = "description">
-					This is a test dfadsrfadfadsf description
-				</div>
-				<div class = "description">
-					This is a test jklikjlkl;u;kl description
-				</div>
-			</div>
-			<div class = "wrapper">
-				<div class = "controls"></div>
-			</div><!-- end of div.wrapper -->
-		</div><!-- end of div#mainSlideShow.grandSlideShow -->
-		
-		<div class = "columnWrapper">
-			<section>
-				<header>
-					<h3>HTML5</h3>
-				</header><!-- end of header -->
-				
-				Hypertext Markup Language (HTML) is a markup language
-				for structuring and presenting content for the Web and a core
-				technology of the internet. 
-			</section><!-- end of section -->
+				<div class = "wrapper">
+					<div class = "controls"></div>
+				</div><!-- end of div.wrapper -->
+			</div><!-- end of div#mainSlideShow.grandSlideShow -->
 			
-			<section>
-				<header>
-					<h3>Portfolios</h3>
-				</header><!-- end of header -->
+			<div class = "columnWrapper">
+				<section>
+					<header>
+						<h3>HTML5</h3>
+					</header><!-- end of header -->
+					
+					Hypertext Markup Language (HTML) is a markup language
+					for structuring and presenting content for the Web and a core
+					technology of the internet. 
+				</section><!-- end of section -->
 				
-				This section is set aside for CSS 233 students to
-				showcase their latest class projects and designs.
-			</section><!-- end of section -->
-		</div><!-- end of div.columnWrapper -->
-		
-		<div class = "columnWrapper">
-			<section>
-				<header>
-					<h3>CSS 3</h3>
-				</header><!-- end of header -->
-				
-				Cascading Style Sheets (CSS) is a style sheet language
-				used for describing the presentation semantics of a document
-				written in a markup language. 
-			</section><!-- end of section -->
+				<section>
+					<header>
+						<h3>Portfolios</h3>
+					</header><!-- end of header -->
+					
+					This section is set aside for CSS 233 students to
+					showcase their latest class projects and designs.
+				</section><!-- end of section -->
+			</div><!-- end of div.columnWrapper -->
 			
-			<section>
-				<header>
-					<h3>Publishing</h3>
-				</header><!-- end of header -->
+			<div class = "columnWrapper">
+				<section>
+					<header>
+						<h3>CSS 3</h3>
+					</header><!-- end of header -->
+					
+					Cascading Style Sheets (CSS) is a style sheet language
+					used for describing the presentation semantics of a document
+					written in a markup language. 
+				</section><!-- end of section -->
 				
-				This section is reserved for students to learn more
-				aobut The Next and publishing their student works.
-			</section><!-- end of section -->
-		</div><!-- end of div.columnWrapper -->
-		
-		<div class = "columnWrapper">
-			<section>
-				<header>
-					<h3>JavaScript</h3>
-				</header><!-- end of header -->
-				
-				JavaScript is a scripting language used to enable web
-				authors to design interactive sites. 
-			</section><!-- end of section -->
+				<section>
+					<header>
+						<h3>Publishing</h3>
+					</header><!-- end of header -->
+					
+					This section is reserved for students to learn more
+					aobut The Next and publishing their student works.
+				</section><!-- end of section -->
+			</div><!-- end of div.columnWrapper -->
 			
-			<section>
-				<header>
-					<h3>The Center</h3>
-				</header><!-- end of header -->
+			<div class = "columnWrapper">
+				<section>
+					<header>
+						<h3>JavaScript</h3>
+					</header><!-- end of header -->
+					
+					JavaScript is a scripting language used to enable web
+					authors to design interactive sites. 
+				</section><!-- end of section -->
 				
-				The Center serves as a real-world and virtual hub for 
-				collaboration in research partnerships, student projects, 
-				educational innovation and entrepreneurial opportunities.  
-				This is a dynamic environment where design, art, narrative, 
-				computer science and education converge.
-			</section><!-- end of section -->
-		</div><!-- end of div.columnWrapper -->
-	</div><!-- end of div#mainContent -->
+				<section>
+					<header>
+						<h3>The Center</h3>
+					</header><!-- end of header -->
+					
+					The Center serves as a real-world and virtual hub for 
+					collaboration in research partnerships, student projects, 
+					educational innovation and entrepreneurial opportunities.  
+					This is a dynamic environment where design, art, narrative, 
+					computer science and education converge.
+				</section><!-- end of section -->
+			</div><!-- end of div.columnWrapper -->
+		</div><!-- end of div#mainContent -->
+	</div><!-- end of div.mainWrapper -->
 	
-	<div class = "mainFooter">
-		<div class = "mediaMuttLogo">
-			<img src = "MediaMuttLogoGoesHere.png" alt = "Media Mutt" />
-		</div><!-- end of div.mediaMuttLogo -->
-		
-		<small>Copyright 2013</small>
-		<small><a href = "#">Contact</a></small>
-	</div><!-- end of div#mainFooter -->
+	<div class = "mainWrapper" style = "margin-bottom: 0px;">
+		<div id = "mainFooter">
+			<!--<div class = "mediaMuttLogo">
+				<img src = "Pictures/Logos/logoExtraSmall.png" alt = "Media Mutt" />
+			</div><!-- end of div.mediaMuttLogo -->
+			
+			<small>Copyright 2013</small>
+			<small><a href = "#">Contact</a></small>
+		</div><!-- end of div#mainFooter -->
+	</div><!-- end of div.mainWrapper -->
 </body>
 </html>

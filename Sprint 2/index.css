@@ -2,47 +2,152 @@
   src: url("Fonts/PTS55F.ttf");
 	font-family: "PTSans";
 }
+@font-face{
+  src: url("Fonts/PTS76F.ttf");
+	font-family: "PTSansBoldItalic";
+}
 
+/*
+ *	Global Tag Navigation
+ *
+ */
 *{
 	position: relative;
 	top: 0px;
 	left: 0px;
 	
+	margin: 0px;
+	padding: 0px;
+	
 	font-family: "PTSans";
 }
+body
+{
+	background-image: url("Pictures/Backgrounds/whiteCanvas.jpg");
+}
 a{
-	color:#4D70DB;
+	color:#edda0c;
 	text-decoration:none;	
 }
 a:hover{
-	color:#998599;
+	color:#ffffff;
 }
 
-div#mainHeader{
-	height: 400px;
+/*
+ *	Main Wrapper
+ *
+ */
+body > div.mainWrapper{
+	width: 98%;
+	
+	margin: 1%;
+	margin-top: 10px;
+	margin-bottom: 10px;
 }
-div#mainHeader > div.title *{
+body > div.mainWrapper > div{
+	width: 1000px;
+	
+	margin: auto;
+}
+
+/*
+ *	Main Header
+ *
+ */
+div#mainHeader
+{
+	height: 125px;
+}
+div#mainHeader > *
+{
+	float: left;
+}
+div#mainHeader > div.title{
+	float: left;
+
+	overflow: auto;
+}
+div#mainHeader > div.title > *{
 	float:left; 
 }
+div#mainHeader > div.title > h1
+{
+	font-family: "PTSansBoldItalic";
+	font-weight: bold;
+	font-size: 54px;
+}
+div#mainHeader > div.title > h2
+{
+	font-weight: bold;
+	font-size: 24px;
+	
+	margin-top: 30px;
+	margin-left: 20px;
+}
+div#mainHeader > nav.dropDown
+{
+	width: 90%;
+	height: 50px;
+	
+	padding-left: 10%;
+	
+	background-color: #642a75;
+	
+	border-radius: 10px;
+}
+div#mainHeader > nav.dropDown div.dropContainer
+{
+	background-color: #642a75;	
+	
+	border-color: #663c77;
+}
+div#mainHeader > nav.dropDown div.dropItem
+{
+	border-color: #663c77;
+}
+div#mainHeader > div.searchBox
+{
+	float: right;
+	
+	margin-top: 40px;
+}
+div#mainHeader > div.searchBox > form > input
+{
+	color: #999999;
+	
+	font-style: italic;
+}
+
+/*
+ *	Drop Down Navigation
+ *
+ */
 nav.dropDown div{
 	width: 100%;
 }
 nav.dropDown > div.topLevel > div.dropContainer{
-	top:40px; 
+	top:50px; 
 }
 nav.dropDown > div.topLevel > div.dropContainer div.dropContainer{
-	left:200px;
+	top: -1px;
+	left: 180px;
 }
 nav.dropDown > div.topLevel{
 	float: left;
 	
-	width:200px;
+	width:180px;
+	
+	margin-left: 10px;
+	margin-right: 10px;
 	
 	text-align:center;
-	line-height:40px;
+	line-height:50px;
 }
 nav.dropDown > div.topLevel div.dropContainer{
 	position:absolute; 
+
+	border-left: solid 1px #000000;
+	border-right: solid 1px #000000;
 
 	display: none;
 }
@@ -54,5 +159,68 @@ nav.dropDown div.dropItem{
 	top: 0px;
 	left: 0px;
 
+	border-top: solid 1px #000000;
+	
 	display: block;
+}
+nav.dropDown div.dropItem:hover > a,
+nav.dropDown div.topLevel:hover > a
+{
+	color:#ffffff;
+}
+
+div.grandSlideShow > div.slides > div.description,
+div.grandSlideShow > div.wrapper
+{
+	background-color: rgba(68, 26, 85, .7);
+}
+
+div.columnWrapper
+{
+	float: left;
+
+	width: 31%;
+	height: 400px;
+	
+	padding: 1%;
+	margin-top: 1%;
+}
+div.columnWrapper > section
+{
+	height: 150px;
+}
+
+div#mainFooter
+{
+	padding-top: 10px;
+	padding-bottom: 10px;
+	
+	color: #ffffff;
+
+	background-color: #441a55;
+	
+	border-radius: 10px;
+	border-bottom-left-radius: 0px;
+	border-bottom-right-radius: 0px;
+	
+	overflow: auto;
+}
+div#mainFooter > *
+{
+	float: left;
+
+	width: 50%;
+	
+	text-align: center;
+	
+	display: block;
+}
+div#mainFooter img
+{
+	max-height: 50px;
+}
+
+.backgroundColor
+{
+	background-color: rgba(44, 44, 44, .8);
 }
