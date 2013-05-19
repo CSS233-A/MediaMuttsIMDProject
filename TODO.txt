@@ -1,0 +1,70 @@
+/*
+ *	Author: 	Adam Burkhalter
+ *	Date:		5/19/2013
+ */
+
+Add/Edit this file as you see fit
+
+To Do:
+	Determine final wireframe
+		Upgrade the main footer
+	Finalize textual content
+	Prepare for styling and javascript
+		determine what other javascript behavior to implement
+	
+Pages:
+	Tutorial pages (for getting started)
+	Description pages (for each program)
+
+To Add:
+	Course Tools:
+		Firefox
+			Firebug
+		Chrome
+		Safari
+		Notepad++
+		FileZilla
+		Git
+		GIMP
+	
+	HTML Resources:
+Good	Notepad++
+Good	w3schools.com
+Good	developers.mozilla.org
+		
+	CSS Resources:
+Good	w3schools.com
+Good	developers.mozilla.org
+		
+	JavaScript Resources:
+Good	w3schools.com
+Good	developers.mozilla.org
+Good	stackoverflow.com
+		
+	Project Management Resources:
+		Git
+		Google Sites
+		Smartsheet
+		
+	Course Information:
+Good	Syllabus
+Good	IMD Description
+Good	Course Description
+		Learning Goals
+		
+	Portfolios:
+		(should we even do this?)
+	
+	Publishing:
+		what info to publish
+	
+	Center for Serious Play:
+	
+	Books:
+		Eloquent Javascript (1E 11) Haverbeke
+		HTML5 Multimedia : Develop and Design (1E 11) Devlin
+		HTML5 Multimedia Development Cookbook (1E 11) Cruse
+		
+	Slideshow:
+		determine what we want to show for the slide show
+		implement pause functionality
