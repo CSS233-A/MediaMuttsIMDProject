@@ -1,0 +1,76 @@
+/*
+ *	Drop Down Navigation
+ */
+nav.dropDown
+{
+	
+}
+
+	nav.dropDown div
+	{
+		width: 100%;
+	}
+	
+	/* Creates a horizontal alignment of the first level of navigation */
+	nav.dropDown > div.topLevel
+	{
+		float: left;
+		
+		width: 23%;
+		
+		margin-left: 1%;
+		margin-right: 1%;
+		
+		text-align:center;
+		line-height:50px;
+	}
+		
+		/* Standard styles for all dropContainers */
+		nav.dropDown > div.topLevel div.dropContainer
+		{
+			position: absolute; 
+
+			border-left: solid 1px #000000;
+			border-right: solid 1px #000000;
+
+			display: none;
+		}
+	
+		/* Affects only the first dropContainer to make it drop vertically rather than horizontally */
+		nav.dropDown > div.topLevel > div.dropContainer
+		{
+			top: 100%; 
+		}
+		
+		/* Creates dropDown effect */
+		nav.dropDown div:hover > div.dropContainer
+		{
+			display: block;
+		}
+		
+			/* Forces all dropContainers other than the first to be dropped to the right rather than below */
+			nav.dropDown > div.topLevel > div.dropContainer div.dropContainer
+			{
+				top: -1px;
+				left: 100%;
+			}
+	
+	/* Standard dropItem styles */
+	nav.dropDown div.dropItem
+	{
+		position: relative;
+		top: 0px;
+		left: 0px;
+
+		border-top: solid 1px #000000;
+		
+		display: block;
+	}
+	
+		/* Keeps the hover effect for the links when navigation down the tree */
+		nav.dropDown div.dropItem:hover > a,
+		nav.dropDown div.topLevel:hover > a
+		{
+			color:#edda0c;
+		}
+		
