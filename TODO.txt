@@ -21,6 +21,7 @@ To Add:
 		Firefox
 			Firebug
 		Chrome
+			Developer Tools
 		Safari
 		Notepad++
 		FileZilla
@@ -59,6 +60,8 @@ Good	Course Description
 		what info to publish
 	
 	Center for Serious Play:
+	
+	Media Mutt Community (should we scrap it?)
 	
 	Books:
 		Eloquent Javascript (1E 11) Haverbeke
