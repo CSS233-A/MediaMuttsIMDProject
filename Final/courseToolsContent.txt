@@ -84,4 +84,27 @@ The DevTools, bundled in Chrome, provide web developers deep access into the int
 Web development tools include a panel to debug scripts by allowing developers to add watch expressions, breakpoints, 
 view the call stack, and pause, step over, step into, and step out of functions while debugging JavaScript.
 A JavaScript console is included. The consoles allow developers to type in JavaScript commands and call functions,
- or view errors that may have been encountered during the execution of a script.
+or view errors that may have been encountered during the execution of a script. HTML viewer and editor is included in the 
+built in web development tools. The difference between the HTML viewer, and the view source feature in web browsers is that the HTML 
+viewer allow you to see the HTML as it was rendered in addition to allowing you to make changes to the HTML and see the change 
+reflected in the page after the change is made.
+In addition to selecting and editing, the HTML elements panels will usually also display properties of the HTML object, 
+such as display dimension, and CSS properties.
+
+//safari
+
+Safari is a web browser developed by Apple Inc. and included with the Mac OS X and iOS operating systems.
+Apple has adopted and has taken an active role in defining standards, such as HTML5 and CSS3, that ensure 
+consistency and push the boundaries of what’s possible on the web. Advancements in web standards mean that 
+leading-edge Internet experiences — rich media and interactive graphics, for example — are available to everyone.
+Safari was the first browser to support HTML5 audio and video tags. They allow developers to integrate media directly
+into standard web pages. Full-screen and closed-caption support for HTML5 video lets developers deliver a richer and
+more accessible video experience. With geolocation support, websites can customize content for users who choose to 
+share their location. Web notifications in Safari are a way to keep users informed about anything related to a 
+developer’s website — an update, a message, or any interactive element. And by supporting HTML5 offline technologies,
+Safari allows web-based applications to store information on your hard drive, so you can use them even without an 
+Internet connection.
+Safari was also the first browser to support CSS3 Animations, which bring a new level of interactivity to the web, 
+and CSS Effects, which let developers add polish to websites by stylizing images and photos with eye-catching gradients, 
+precise masks, and stunning reflections. CSS Filters now enable advanced effects and animations that tap into hardware 
+acceleration for fast, smooth rendering
