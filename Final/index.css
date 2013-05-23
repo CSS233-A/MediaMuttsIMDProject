@@ -13,13 +13,39 @@ div.columnWrapper
 	float: left;
 
 	width: 31%;
-	height: 500px;
 	
 	padding: 1%;
 }
 div.columnWrapper > section
 {
-	height: 150px;
+	min-height: 250px;
+	
+	margin-bottom: 20px;
+}
+div.columnWrapper > section > header
+{
+	margin-bottom: 10px;
+}
+div.columnWrapper > section > hr
+{
+	display: none;
+}
+/*div.columnWrapper > section > hr
+{
+	border: 0px none #999999;
+	border-top: 1px solid #999999;
+	
+	width: 96%;
+	
+	margin-left: 2%;
+	margin-top: 10px;
+	margin-bottom: 10px;
+}*/
+div.columnWrapper > section img
+{
+	float: left;
+
+	width: 40%;
 }
 
 .center

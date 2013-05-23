@@ -86,9 +86,15 @@ function GrandSlideShow(containerElement, transition)
 			if (this.transitionType.toUpperCase() == "FADE")
 			{
 				if (this.slides.length == 1)
+				{
 					this.slides[this.slides.length - 1].opacity = 1;
+					this.slides[this.slides.length - 1].style.zIndex = 2;
+				}
 				else
+				{
 					this.slides[this.slides.length - 1].opacity = 0;
+					this.slides[this.slides.length - 1].style.zIndex = 1;
+				}
 					
 				this.slides[this.slides.length - 1].style.opacity = this.slides[this.slides.length - 1].opacity;
 			}
@@ -110,9 +116,16 @@ function GrandSlideShow(containerElement, transition)
 			if (this.transitionType.toUpperCase() == "FADE")
 			{
 				if (this.description.length == 1)
+				{
 					this.description[this.description.length - 1].opacity = 1;
+					this.description[this.description.length - 1].style.zIndex = 2;
+				}
 				else
+				{
 					this.description[this.description.length - 1].opacity = 0;
+					this.description[this.description.length - 1].style.zIndex = 1;
+					
+				}
 					
 				this.description[this.description.length - 1].style.opacity = this.description[this.description.length - 1].opacity;
 			}
@@ -250,10 +263,10 @@ GrandSlideShow.prototype.process = function()
 }
 GrandSlideShow.prototype.fadeTransition = function()
 {
-	if (this.slides[this.slides.currentSlide].opacity > 0 && this.slides[this.slides.nextSlide].opacity < 1)
+	if (this.slides[this.slides.currentSlide].opacity > 0)
 	{
 		this.slides[this.slides.currentSlide].opacity -= .1;
-		this.slides[this.slides.nextSlide].opacity += .1;
+		this.slides[this.slides.nextSlide].opacity = 1;
 		
 		this.updateSlides();
 	}
@@ -276,6 +289,15 @@ GrandSlideShow.prototype.fadeTransition = function()
 			this.slides.nextSlide = 0;
 		else
 			this.slides.nextSlide++;
+		
+		this.slides[this.slides.currentSlide].style.zIndex = 2;
+		this.slides[this.slides.nextSlide].style.zIndex = 1;
+		
+		if (this.slides.currentSlide < this.description.length)
+			this.description[this.slides.currentSlide].style.zIndex = 2;
+			
+		if (this.slides.nextSlide < this.description.length)
+			this.description[this.slides.nextSlide].style.zIndex = 1;
 			
 		this.currentWaitTicks = 0;
 	}
