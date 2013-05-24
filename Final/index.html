@@ -7,14 +7,15 @@
 	
 	<title>UWB | CSS 233 Interactive Media Technologies</title>
 	
-	<link type = "text/css" rel = "stylesheet" href = "grandSlideShow.css" />
+	<link type = "text/css" rel = "stylesheet" href = "GrandSlideShow/grandSlideShow.css" />
 	<link type = "text/css" rel = "stylesheet" href = "index.css" />
 	<link type = "text/css" rel = "stylesheet" href = "Base Files/base.css" />
 	<link type = "text/css" rel = "stylesheet" href = "Base Files/dropDownNav.css" />
 	
 	<script type = "text/javascript" src = "index.js"></script>
-	<script type = "text/javascript" src = "speedVector.js"></script>
-	<script type = "text/javascript" src = "grandSlideShow.js"></script>
+	<script type = "text/javascript" src = "GrandSlideShow/speedVector.js"></script>
+	<script type = "text/javascript" src = "GrandSlideShow/domFunctions.js"></script>
+	<script type = "text/javascript" src = "GrandSlideShow/grandSlideShow.js"></script>
 </head>
 <body onload = "initialize();">
 	<div class = "mainWrapper backgroundColor" style = "margin-top:0px; z-index: 2;">
@@ -30,12 +31,10 @@
 				<a href = "" title = "Home"><h2>Interactive Media Technologies</h2></a>
 			</div><!-- end of div.title -->
 			
-			<div class = "searchBox">
-				<form>
-					<label for = "searchField">Search</label>
-					<input id = "searchBox" name = "searchField" type = "search" value = "Search" /> 
-				</form><!-- end of form -->
-			</div><!-- end of div.searchBox -->
+			<form class = "searchBox">
+				<label for = "searchField">Search</label>
+				<input id = "searchBox" name = "searchField" type = "search" value = "Search" /> 
+			</form><!-- end of form.searchBox -->
 			
 			<nav class = "dropDown">
 				<div class = "topLevel">
@@ -104,7 +103,7 @@
 								</div><!-- end of div.dropItem-->
 								
 								<div class = "dropItem">
-									<a href = "Resources/Browsers/FireFox/">Firefox</a>
+									<a href = "Resources/Browsers/Firefox/">Firefox</a>
 								</div><!-- end of div.dropItem-->
 								
 								<div class = "dropItem">
@@ -166,11 +165,11 @@
 		<div id = "mainContent">
 			<div id = "mainSlideShow" class = "grandSlideShow">
 				<div class = "slides">
-					<img class = "slide" src = "Pictures/Slide Show/1.jpg" alt = "" />
-					<img class = "slide" src = "Pictures/Slide Show/2.jpg" alt = "" />
-					<img class = "slide" src = "Pictures/Slide Show/3.jpg" alt = "" />
-					<img class = "slide" src = "Pictures/Slide Show/2.jpg" alt = "" />
-					<img class = "slide" src = "Pictures/Slide Show/1.jpg" alt = "" />
+					<img class = "content" src = "Pictures/Slide Show/1.jpg" alt = "" />
+					<img class = "content" src = "Pictures/Slide Show/2.jpg" alt = "" />
+					<img class = "content" src = "Pictures/Slide Show/3.jpg" alt = "" />
+					<img class = "content" src = "Pictures/Slide Show/2.jpg" alt = "" />
+					<img class = "content" src = "Pictures/Slide Show/1.jpg" alt = "" />
 					<div class = "description">
 						This is a test description
 					</div>

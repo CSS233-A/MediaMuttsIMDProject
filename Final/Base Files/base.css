@@ -98,6 +98,8 @@ body > div.mainWrapper
 div#mainHeader
 {
 	height: 160px;
+	
+	z-index: 2;
 }
 
 	/* All Direct Children of mainHeader */
@@ -153,7 +155,7 @@ div#mainHeader
 		width: 100%;
 		height: 50px;
 		
-		z-index: 2;
+		z-index: 6;
 	}
 	
 		/* Styles the navigation to the proper colors */
@@ -171,22 +173,25 @@ div#mainHeader
 		}
 	
 	/* Forces the searchBox to the right of the mainHeader */
-	div#mainHeader > div.searchBox
+	div#mainHeader > form.searchBox
 	{
 		float: right;
-	}
-		div#mainHeader > div.searchBox > form
-		{
-			margin-top: 70px;
-		}
 		
-			div#mainHeader > div.searchBox > form > input
-			{
-				color: #999999;
-				
-				font-style: italic;
-			}
+		margin-top: 70px;
+	}
+		
+		div#mainHeader > form.searchBox > input
+		{
+			color: #999999;
+			
+			font-style: italic;
+		}
 /* end of mainHeader */
+
+div#mainContent
+{
+	z-index: 1;
+}
 
 /*
  *	Main Footer

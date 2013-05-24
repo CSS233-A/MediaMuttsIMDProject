@@ -4,7 +4,11 @@ function initialize()
 
 	var animatedObjects = new Array();
 
-	var mainSlideShow = new GrandSlideShow(document.getElementById("mainSlideShow"), "Fade");
+	var mainSlideShow = new GrandSlideShow(
+		document.getElementById("mainSlideShow"), 
+		[],
+		"Slide"
+	);
 	animatedObjects.push(mainSlideShow);
 	
 	var searchBox = document.getElementById("searchBox");
