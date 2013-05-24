@@ -23,3 +23,8 @@ Sprint 3 (tenative)
 		Games?
 		What to do with the footer?
 		
+	TODO:
+		Create a large comment for the forum section.
+		Pause button and hovering.
+		
+		
