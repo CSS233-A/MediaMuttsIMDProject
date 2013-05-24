@@ -1,0 +1,110 @@
+//FireFox
+
+Mozilla Firefox is a free and open source web browser developed for Windows, OS X and Linux,
+with a mobile version for Android, by Mozilla Foundation and its subsidiary, the Mozilla 
+Corporation. Firefox uses the Gecko layout engine to render web pages, which implements 
+current and anticipated web standards.
+
+//FireFox Standards
+
+Firefox implements many web standards, including HTML4 (partial HTML5), XML, XHTML, MathML,
+SVG 1.1 (partial), CSS (with extensions), ECMAScript (JavaScript), DOM, XSLT, XPath, 
+and APNG (Animated PNG) images with alpha transparency. Firefox also implements standards 
+proposals created by the WHATWG such as client-side storage, and canvas element
+Firefox has passed the Acid2 standards-compliance test since version 3.0. Mozilla had 
+originally stated that they did not intend for Firefox to pass the Acid3 test fully because
+they believed that the SVG fonts part of the test had become outdated and irrelevant, due 
+to WOFF being agreed upon as a standard by all major browser makers. Because the SVG 
+font tests were removed from the Acid3 test in September 2011, Firefox 4 and greater scored 100/100.
+Firefox also implements a proprietary protocol from Google called "Safe Browsing", 
+used to exchange data related with phishing and malware protection.
+
+//Firebug
+
+Firebug integrates with Firefox to put a wealth of web development tools at your fingertips 
+while you browse. You can edit, debug, and monitor CSS, HTML, and JavaScript live in any web 
+page.Firebug makes it simple to find HTML elements buried deep in the page. Once you've found 
+what you're looking for, Firebug gives you a wealth of information, and lets you edit the HTML 
+live.Firebug's CSS tabs tell you everything you need to know about the styles in your web pages, 
+and if you don't like what it's telling you, you can make changes and see them take effect instantly.
+Firebug includes a powerful JavaScript debugger that lets you pause execution at any time and have look
+at the state of the world. If your code is a little sluggish, use the JavaScript profiler to measure 
+performance and find bottlenecks fast.
+
+
+//Notepad ++
+
+Notepad++ is a text editor and source code editor for Windows. It aims to be a lightweight 
+and robust editor for a variety of programming and scripting languages. One advantage of Notepad++ 
+over the built-in Windows text editor Notepad, is that Notepad++ supports tabbed editing, which 
+allows working with multiple open files. Notepad++ opens big files significantly faster and can 
+be used as Windows Notepad replacement.
+Notepad++ supports syntax highlighting and code folding for over 50 programming, scripting, 
+and markup languages. It attempts to automatically detect the language that a given file uses,
+using a modifiable list of file extension bindings. Users may also manually set the current language, 
+overriding the extension's default language. The program also supports autocompletion for a subset of 
+the API of some programming languages
+
+//Filezilla
+FileZilla is free and cross-platform FTP software, consisting of FileZilla Client and FileZilla Server. 
+Binaries are available for Windows, Linux, and Mac OS X. It supports FTP, SFTP, and FTPS (FTP over SSL/TLS).
+File Transfer Protocol (FTP) is a standard network protocol used to transfer files from one host to another 
+host over a TCP-based network, such as the Internet.
+// to add how to set up filezilla and uw webspace.. This may need to be updated for a better description 
+
+//Git
+Git is a distributed revision control and source code management (SCM) system with an emphasis on speed. 
+Git has been adopted by many projects. Every Git working directory is a full-fledged repository
+with complete history and full revision tracking capabilities, not dependent on network access or a central server.
+Git is free software distributed under the terms of the GNU General Public License version 2.
+
+//GitHub
+GitHub is a web-based hosting service for software development projects that use the Git revision control system. 
+GitHub offers both paid plans for private repositories, and free accounts for open source projects. The site provides
+social networking functionality such as feeds, followers and the network graph to display how developers work on their 
+versions of a repository.
+
+//gimp
+
+GIMP is an acronym for GNU Image Manipulation Program. It is a freely distributed program for such tasks as photo retouching,
+image composition and image authoring.It has many capabilities. GIMP has tools used for image retouching and editing, free-form drawing, 
+resizing, cropping, photo-montages, converting between different image formats, and more specialised tasks. Animated 
+images such as GIF and MPEG files can be created using an animation plugin.
+
+//chrome
+
+Google Chrome is a free, open-source web browser developed by Google. It was released in 2008, and has grown to be one 
+of the most popular browsers today. When Google decided to make a browser, they wanted to completely rethink the browser, 
+as browsing now is very different from browsing simple text pages. Now we email, shop, pay bills, and run large application 
+in our browsers. Chrome has really excellent support for HTML5, CSS3, and JavaScript.
+
+//chrome developer tools
+
+The DevTools, bundled in Chrome, provide web developers deep access into the internals of the browser and their web application.
+Web development tools include a panel to debug scripts by allowing developers to add watch expressions, breakpoints, 
+view the call stack, and pause, step over, step into, and step out of functions while debugging JavaScript.
+A JavaScript console is included. The consoles allow developers to type in JavaScript commands and call functions,
+or view errors that may have been encountered during the execution of a script. HTML viewer and editor is included in the 
+built in web development tools. The difference between the HTML viewer, and the view source feature in web browsers is that the HTML 
+viewer allow you to see the HTML as it was rendered in addition to allowing you to make changes to the HTML and see the change 
+reflected in the page after the change is made.
+In addition to selecting and editing, the HTML elements panels will usually also display properties of the HTML object, 
+such as display dimension, and CSS properties.
+
+//safari
+
+Safari is a web browser developed by Apple Inc. and included with the Mac OS X and iOS operating systems.
+Apple has adopted and has taken an active role in defining standards, such as HTML5 and CSS3, that ensure 
+consistency and push the boundaries of what’s possible on the web. Advancements in web standards mean that 
+leading-edge Internet experiences — rich media and interactive graphics, for example — are available to everyone.
+Safari was the first browser to support HTML5 audio and video tags. They allow developers to integrate media directly
+into standard web pages. Full-screen and closed-caption support for HTML5 video lets developers deliver a richer and
+more accessible video experience. With geolocation support, websites can customize content for users who choose to 
+share their location. Web notifications in Safari are a way to keep users informed about anything related to a 
+developer’s website — an update, a message, or any interactive element. And by supporting HTML5 offline technologies,
+Safari allows web-based applications to store information on your hard drive, so you can use them even without an 
+Internet connection.
+Safari was also the first browser to support CSS3 Animations, which bring a new level of interactivity to the web, 
+and CSS Effects, which let developers add polish to websites by stylizing images and photos with eye-catching gradients, 
+precise masks, and stunning reflections. CSS Filters now enable advanced effects and animations that tap into hardware 
+acceleration for fast, smooth rendering

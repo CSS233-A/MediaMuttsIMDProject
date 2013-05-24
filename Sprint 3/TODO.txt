@@ -1,0 +1,25 @@
+Sprint 3 (tenative)
+
+	Goals:
+		Finalize 75% of all the content
+		Finalize styling of all content already on the website
+		Determine what javascript behavior is needed/wanted (make a list)
+		
+	Team Member Focus:
+		Kevin	-	HTML
+		Jeff 	-	HTML, CSS
+		Adam	-	HTML, CSS
+		Stacie	-	HTML, CSS
+		
+	Assignments:
+		Kevin	-	Slideshow
+		Jeff	-	Course Info Section
+		Adam	-	Course Resources Section
+		Stacie	-	Project Management Section
+		
+	Questions:
+		Do we want the forums in place?
+		Do we want to add functionality to the slide show?
+		Games?
+		What to do with the footer?
+		

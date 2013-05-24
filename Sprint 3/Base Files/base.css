@@ -1,0 +1,241 @@
+/*
+ *	Font-Faces
+ */
+@font-face
+{
+	src: url("../Fonts/PTS55F.ttf");
+	font-family: "PTSans";
+}
+@font-face
+{
+	src: url("../Fonts/PTS76F.ttf");
+	font-family: "PTSansBoldItalic";
+}
+/* end of Font-Faces */
+
+/*
+ *	Global Tag Styles
+ */
+*
+{
+	position: relative;
+	top: auto;
+	left: auto;
+	
+	margin: 0px;
+	padding: 0px;
+	
+	font-family: "PTSans";
+}
+body
+{
+	background-image: url("../Pictures/Backgrounds/whiteCanvas.jpg");
+}
+a
+{
+	color:#e3e3e3;
+	text-decoration:none;
+}
+a:hover
+{
+	color:#edda0c;
+}
+div.title:hover > a,
+header:hover > a
+{
+	color:#ffffff;
+}
+img
+{
+	border: none 0px #ffffff;
+}
+ul > header
+{
+	margin-bottom: 5px;
+}
+li
+{
+	font-size: 14px;
+	margin-left: 20px;
+	margin-bottom: 3px;
+}
+/* end of Global Styles */
+
+/*
+ *	Main Wrapper
+ */
+body > div.mainWrapper
+{
+	width: 100%;
+	
+	margin-top: 20px;
+	margin-bottom: 10px;
+}
+	body > div.mainWrapper > div /* Centers the three main sections on the page */
+	{
+		width: 1000px;
+		
+		margin: auto;
+	}
+	
+	body > div.mainWrapper > div.navBackground /* Highlights the navigation bar */
+	{
+		position: absolute;
+		bottom: 0px;
+
+		width: 100%;
+		height: 50px;
+		
+		margin: 0px;
+		
+		z-index: 1;
+	}
+/* end of Main Wrapper */
+
+/*
+ *	Main Header
+ */
+div#mainHeader
+{
+	height: 160px;
+	
+	z-index: 2;
+}
+
+	/* All Direct Children of mainHeader */
+	div#mainHeader > *
+	{
+		float: left;
+	}
+	
+		div#mainHeader > div.UWBLogo img /* Creates the shadow effect for the UWB logo */
+		{
+			width: 100%;
+			
+			box-shadow: 4px 4px 10px 3px #000000;
+		}
+	
+	/* Affects the title box of the mainHeader */	
+	div#mainHeader > div.title
+	{
+		float: left;
+		
+		margin-top: 40px;
+		margin-left: 20px;
+
+		overflow: auto;
+	}
+	
+		div#mainHeader > div.title > *
+		{
+			float:left; 
+		}
+		
+		div#mainHeader > div.title h1,
+		div#mainHeader > div.title h1 > *
+		{
+			font-family: "PTSansBoldItalic";
+			font-weight: bold;
+			font-size: 54px;
+		}
+		
+		div#mainHeader > div.title h2,
+		div#mainHeader > div.title h2 > *
+		{
+			font-weight: bold;
+			font-size: 24px;
+			
+			margin-top: 30px;
+			margin-left: 20px;
+		}
+	
+	/* Affects the navigation in the mainHeader */
+	div#mainHeader > nav.dropDown
+	{
+		width: 100%;
+		height: 50px;
+		
+		z-index: 6;
+	}
+	
+		/* Styles the navigation to the proper colors */
+		div#mainHeader > nav.dropDown div.dropContainer
+		{
+			background-color: #492d6d;
+			
+			border-color: #663c77;
+		}
+		
+		/* Same as previous comment */
+		div#mainHeader > nav.dropDown div.dropItem
+		{
+			border-color: #797d8d;
+		}
+	
+	/* Forces the searchBox to the right of the mainHeader */
+	div#mainHeader > form.searchBox
+	{
+		float: right;
+		
+		margin-top: 70px;
+	}
+		
+		div#mainHeader > form.searchBox > input
+		{
+			color: #999999;
+			
+			font-style: italic;
+		}
+/* end of mainHeader */
+
+div#mainContent
+{
+	z-index: 1;
+}
+
+/*
+ *	Main Footer
+ */
+div#mainFooter
+{
+	padding-top: 10px;
+	padding-bottom: 10px;
+	
+	color: #ffffff;
+	
+	overflow: auto;
+}
+
+	/* Makes all children a inline with each other */
+	div#mainFooter > *
+	{
+		float: left;
+
+		width: 50%;
+		
+		text-align: center;
+		
+		display: block;
+	}
+	
+	div#mainFooter img
+	{
+		max-height: 50px;
+	}
+/* end of mainFooter */
+
+/*
+ *	Global Class Styles
+ */
+.backgroundColor
+{
+	background-color: #593d8d;
+	
+	color: #ffffff;
+}
+
+.emphasizedBackgroundColor
+{
+	background-color: #492d6d;
+}
+/* end of Global Class Styles */

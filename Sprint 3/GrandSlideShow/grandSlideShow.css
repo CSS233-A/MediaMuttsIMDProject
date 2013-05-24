@@ -1,0 +1,81 @@
+/*
+ *	Grand Slide Show Styles
+ *
+ *	Includes:
+ *		Standard styling of all grand slide shows
+ */
+div.grandSlideShow
+{
+	width: 100%;
+	min-width: 1000px;
+	height: 100%;
+	min-height: 500px;
+}
+div.grandSlideShow > div.slides
+{
+	width: 100%;
+	height: 100%;
+	min-height: 500px;
+	
+	overflow: hidden;
+}
+div.grandSlideShow > div.slides > *.content
+{
+	position: absolute;
+	top: auto;
+	right: auto;
+	left: 0px;
+	bottom: 0px;
+	
+	min-width: 100%;
+	min-height: 100%;
+}
+div.grandSlideShow > div.slides > div.description
+{
+	position: absolute;
+	top: 160px;
+	right: auto;
+	left: 40px;
+	bottom: auto;
+	
+	width: 250px;
+	
+	padding: 10px;
+	
+	color: #ffffff;
+	font-family: "PTSans";
+	font-size: 14px;
+	
+	background-color: rgba(44, 44, 44, .7);
+}
+div.grandSlideShow > div.wrapper
+{
+	position: absolute;
+	top: auto;
+	bottom: 0px;
+	
+	width: 100%;
+	height: 40px;
+	
+	z-index: 2;
+	
+	background-color: rgba(44, 44, 44, .7);
+}
+div.grandSlideShow > div.wrapper > div.controls
+{
+	width: 1000px;
+	height: 100%;
+	
+	margin: auto;
+	
+	text-align: center;
+}
+div.grandSlideShow > div.wrapper > div.controls > img
+{
+	height: 26px;
+
+	margin: 10px;
+	margin-top: 7px;
+	
+	cursor: pointer;
+}
