@@ -1,0 +1,31 @@
+<ul>
+  <header>Lecture</header>
+		<li>Tuesday and Thrusday 5:45 - 7:45</li>
+		<li>Learn what you need to understand</li>
+		<li>Teachings beyond the textbook</li>
+		<li>Get questions answered</li>
+</ul>
+
+<ul>
+	<header>Homework</header>
+		<li>30% of overall grade</li>
+		<li>4 assignments throughout quarter</li>
+		<li>Applying course concepts</li>
+		<li>Builds on previous understanding</li>
+</ul>
+
+<ul>
+	<header>Quizzes and Exams</header>
+		<li>40% of overall grade</li>
+		<li>2 quizzes and 1 final exam</li>
+		<li>Solidify what has been learned</li>
+		<li>Motivation to learn more</li>		
+</ul>
+
+<ul>
+	<header>Project</header>
+		<li>30% of overall grade</li>
+		<li>Introduction to project management</li>
+		<li>Sparks creativity</li>
+		<li>Combines skills</li>
+</ul>
