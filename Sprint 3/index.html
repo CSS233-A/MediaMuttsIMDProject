@@ -1,4 +1,3 @@
-
 <!DOCTYPE html>
 <html lang = "en">
 <head>
@@ -16,7 +15,7 @@
 	<script type = "text/javascript" src = "Base Files/base.js"></script>
 	<script type = "text/javascript" src = "Base Files/physics.js"></script>
 	<script type = "text/javascript" src = "Base Files/mainInterval.js"></script>
-	<!--<script type = "text/javascript" src = "Base Files/pongGame.js"></script>-->
+	<script type = "text/javascript" src = "Base Files/pongGame.js"></script>
 	
 	<script type = "text/javascript" src = "GrandSlideShow/domFunctions.js"></script>
 	<script type = "text/javascript" src = "GrandSlideShow/grandSlideShow.js"></script>
@@ -175,19 +174,50 @@
 		<div id = "mainContent">
 			<div id = "mainSlideShow" class = "grandSlideShow">
 				<div class = "slides">
-					<!--<div id = "pongGameContainer" class = "content" style = "margin-top: 20px;">
+					<div id = "pongGameContainer" class = "content" style = "margin-top: 20px;">
 						<canvas id = "pongGame" style = "width: 1000px; height: 500px; background-color: rgba(0, 0, 0, .1);">
 							Sorry, your web browser does not support advanced graphic cababilities.
 						</canvas>
 						<input id = "pongGameButton" class = "bigButton" style = "position: absolute; top: 210px; left: 350px; width: 300px; z-index: 2;" type = "button" value = "Start Pong!" />
-					</div>-->
+					</div>
 					<img class = "content" src = "Pictures/Slide Show/1.jpg" alt = "" />
 					<img class = "content" src = "Pictures/Slide Show/2.jpg" alt = "" />
 					<img class = "content" src = "Pictures/Slide Show/3.jpg" alt = "" />
-					<img class = "content" src = "Pictures/Slide Show/2.jpg" alt = "" />
-					<img class = "content" src = "Pictures/Slide Show/1.jpg" alt = "" />
+					<img class = "content" src = "Pictures/Slide Show/HTML5_sticker.png" alt = "" />
+					<img class = "content" src = "Pictures/Slide Show/css3-web-design-examples.jpg" alt = "" />
+					<img class = "content" src = "Pictures/Slide Show/best-javascript-sites.jpg" alt = "" />
+					<img class = "content" src = "Pictures/Slide Show/w3school1.jpg" alt = "" />
+					<img class = "content" src = "Pictures/Slide Show/NotepadppPortable.png" alt = "" />
+					<img class = "content" src = "Pictures/Slide Show/filezilla.gif" alt = "" />
 					<div class = "description">
-						This is a test description
+						<div>
+							<header style = "font-weight: bold;">Score:</header>
+							<div id = "pongGameScore">0</div>
+						</div><!-- end of div -->
+						
+						<div id = "pongGameInformation"> 
+							<br />
+						
+							<div>
+								<header style = "font-weight: bold;">Contols:</header>
+								<div>
+									<span>W</span><span> - Move the paddle up</span><br />
+									<span>S</span><span> - Move the paddle down</span><br />
+									<span>P</span><span> - Pause/Unpause the game</span><br />
+									<span>R</span><span> - Restart the game</span><br />
+								</div>
+							</div><!-- end of div -->
+							
+							<br />
+							
+							<div>
+								<header style = "font-weight: bold;">Objective:</header>
+								<div>
+									The objective of this game is simple. Do not let the ball get past your
+									paddle. Stop the ball at all costs to get the highest score!
+								</div>
+							</div><!-- end of div -->
+						</div><!-- end of div#pongGameInformation -->
 					</div>
 					<div class = "description">
 						This is a testadf af adsf description
