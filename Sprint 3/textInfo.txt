@@ -1,0 +1,21 @@
+Haverbeke 
+Eloquent JavaScript goes beyond the cut-and-paste scripts of the recipe books and teaches 
+you to write code that's elegant and effective. You'll start with the basics of programming, 
+and learn to use variables, control structures, functions, and data structures. Then you'll 
+dive into the real JavaScript artistry: higher-order functions, closures, and object-oriented 
+programming.
+
+Cruse
+Written in a cookbook style, this book offers solutions using a recipe based approach. 
+Each recipe contains step-by-step instructions followed by an analysis of what was done in 
+each task and other useful information. Web developers who value the need to stay ahead of 
+the game. This cookbook will give you the edge with practical recipes for wielding this new 
+technology immediately.
+
+Delvin
+This book is an easy, approachable guide to building native HTML5 multimedia into a website, 
+from the simplest addition to more advanced features. It's written in a simple, straightforward 
+style that's not too techy,  yet advanced enough for the more experienced coder who just needs 
+to get up to speed on these powerful new capabilities. The book's companion website provides 
+all the examples in a working format for easy access and enhanced visualization for the reader. 
+
