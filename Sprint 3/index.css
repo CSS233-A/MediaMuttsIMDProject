@@ -4,8 +4,13 @@ div.grandSlideShow
 	
 	margin-bottom: 20px;
 }
+div.grandSlideShow > div.slides > div.description
+{
+	top: 20px;
+	left: 20px;
+}
 div.grandSlideShow > div.slides > div.description,
 div.grandSlideShow > div.wrapper
 {
-	background-color: rgba(44, 44, 44, .8);
+	background-color: rgba(44, 44, 44, .6);
 }

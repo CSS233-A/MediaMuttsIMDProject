@@ -52,11 +52,11 @@ function SpeedVector(_x, _y)
 	}
 	this.speed = function()
 	{
-		return x;
+		return speed;
 	}
 	this.angle = function()
 	{
-		return x;
+		return angle;
 	}
 	this.setComponentSpeeds = function(_x, _y)
 	{
@@ -72,7 +72,7 @@ function SpeedVector(_x, _y)
 	{	
 		if (_angle != null && _speed != null)
 		{
-			speed = speed;
+			speed = Math.abs(_speed);
 			angle = _angle
 			x = speed * Math.cos(angle);
 			y = speed * Math.sin(angle);
@@ -83,4 +83,60 @@ function SpeedVector(_x, _y)
 		this.setSpeed(_x, _y);
 	else
 		this.setComponentSpeeds(_x, _y);
+}
+
+function Point2D(_x, _y)
+{
+	var x;
+	var y;
+	
+	this.x = function(_x)
+	{
+		if (_x != null)
+			x = _x;
+			
+		return x;
+	}
+	this.y = function(_y)
+	{
+		if (_y != null)
+			y = _y;
+			
+		return y;
+	}
+	this.set = function(_x, _y)
+	{
+		this.x(_x);
+		this.y(_y);
+	}
+	
+	this.set(_x, _y);
+}
+
+function Rectangle(_width, _height)
+{
+	var width;
+	var height;
+	
+	this.width = function(_width)
+	{
+		if (_width != null)
+			width = _width;
+			
+		return width;
+	}
+	this.height = function(_height)
+	{
+		if (_height != null)
+			height = _height;
+			
+		return height;
+	}
+	this.set = function(_width, _height)
+	{
+		this.width(_width);
+		this.height(_height);
+	}
+	
+	this.set(_width, _height);
 }

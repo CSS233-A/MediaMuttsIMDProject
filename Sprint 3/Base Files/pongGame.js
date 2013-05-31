@@ -1,12 +1,17 @@
 scripts.push(function()
 {
-	var testGame = new PongGame("pongGame");
+	var slideShowPong = new PongGame("pongGame");
+	var slideShowPongScore = document.getElementById("pongGameScore");
+	
+	var score = 0;
 	
 	var element = document.getElementById("pongGameButton");
 	element.startPong = function()
 	{
-		testGame.unPause();
+		slideShowPong.unPause();
 		this.style.display = "none";
+		
+		document.getElementById("pongGameInformation").style.display = "none";
 		
 		var pauseSlideShow = document.createEvent("Event")
 		pauseSlideShow.initEvent("mousedown", true, true)
@@ -14,8 +19,9 @@ scripts.push(function()
 	}
 	element.resetPong = function()
 	{
-		testGame.resetGame = true;
+		slideShowPong.resetGame = true;
 		this.style.display = "none";
+		document.getElementById("pongGameInformation").style.display = "none";
 	}
 	
 	element.addEventListener(
@@ -27,19 +33,24 @@ scripts.push(function()
 	animatedObjects.push(new Object());
 	animatedObjects[animatedObjects.length - 1].process = function()
 	{
-		testGame.update();
+		slideShowPong.update();
+		document.getElementById("pongGameScore").firstChild.nodeValue = slideShowPong.getScore();
 	}
 });
 
 function PongGame(
 	_containerID)
 {
+	var _this = this;
+
 	var container = document.getElementById(_containerID);
 	var context = container.getContext("2d");
 	
 	this.resetGame = false;
 	var gameOver = false;
 	var isPaused = true;
+	
+	var score = 0;
 	
 	var mainBall = new BouncingBall(
 		context, 
@@ -67,22 +78,58 @@ function PongGame(
 		"rgba(0, 0, 255, 1)"
 	);
 	
+	var isMainPaddleFree = true;
+	
 	document.body.addEventListener(
 		"keydown",
 		function(event)
 		{		
-			if (event.keyCode == 87) //w
-				mainPaddle.velocity().setComponentSpeeds(0, 20);
-			else if (event.keyCode == 83) //s
-				mainPaddle.velocity().setComponentSpeeds(0, -20);
+			if (event.keyCode == 87 && mainPaddle.velocity().y() < 20) //w
+			{
+				mainPaddle.velocity().setComponentSpeeds(
+					0, 
+					mainPaddle.velocity().y() + 20
+				);
+			}
+			else if (event.keyCode == 83 && mainPaddle.velocity().y() > -20) //s
+			{
+				mainPaddle.velocity().setComponentSpeeds(
+					0, 
+					mainPaddle.velocity().y() - 20
+				);
+			}
 		},
 		true
 	);
 	document.body.addEventListener(
 		"keyup",
 		function(event)
-		{		
-			mainPaddle.velocity().setComponentSpeeds(0, 0);
+		{
+			if (event.keyCode == 87 && mainPaddle.velocity().y() > 0) //w
+			{
+				mainPaddle.velocity().setComponentSpeeds(
+					0, 
+					mainPaddle.velocity().y() - 20
+				);
+			}
+			else if (event.keyCode == 83 && mainPaddle.velocity().y() < 0) //s
+			{
+				mainPaddle.velocity().setComponentSpeeds(
+					0, 
+					mainPaddle.velocity().y() + 20
+				);
+			}
+			else if (event.keyCode == 82) //r
+			{
+				document.getElementById("pongGameButton").resetPong();
+			}
+			else if (event.keyCode == 80) //p
+			{
+				if (isPaused)
+					isPaused = false;
+				else
+					isPaused = true;
+			}
 		},
 		true
 	);
@@ -106,6 +153,8 @@ function PongGame(
 				(Math.random() * .5 * Math.PI) - (.25 * Math.PI)
 			);
 		
+			score = 0;
+		
 			gameOver = false;
 			this.resetGame = false;
 		}
@@ -128,6 +177,8 @@ function PongGame(
 						true
 					)
 				);
+				
+				score = score + 1;
 			}
 			else if (mainBall.x() - mainBall.radius() < 0 || mainBall.x() + mainBall.radius() > mainBall.border().width())
 			{
@@ -169,18 +220,24 @@ function PongGame(
 				mainPaddle.velocity().setComponentSpeeds(0, 0);
 				mainPaddle.setPosition(mainPaddle.x(), 0);
 				mainPaddle.update();
+				
+				isMainPaddleFree = false;
 			}
 			else if (mainPaddle.y() > mainPaddle.border().height() - mainPaddle.size().height())
 			{
 				mainPaddle.velocity().setComponentSpeeds(0, 0);
 				mainPaddle.setPosition(mainPaddle.x(), mainPaddle.border().height() - mainPaddle.size().height());
 				mainPaddle.update();
+				
+				isMainPaddleFree = false;
 			}
 		}
 		else if (gameOver)
 		{
 			context.fillStyle = "rgba(255, 0, 0, .02)";
 			context.fillRect(0, 0, container.width, container.height);
+			
+			document.getElementById("pongGameInformation").style.display = "block";
 			
 			var element = document.getElementById("pongGameButton");
 			element.removeEventListener(
@@ -206,6 +263,11 @@ function PongGame(
 	this.pause = function()
 	{
 		isPaused = true;
+	}
+	
+	this.getScore = function()
+	{
+		return score;
 	}
 }
 
