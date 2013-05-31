@@ -1,0 +1,55 @@
+Course Description 
+
+CSS 233 Interactive Media Technologies is a new 5 credit course offered at the University of Washington Bothell. CSS 233 examines the core concepts and technologies used to design, build, and support interactive media applications. Projects are created using media production processes and tools and applies programming constructs, incorporates text and multimedia content, and uses standard formats and languages.    
+
+CSS 233 breaks down the design process into three stages. Starting first with the content of the page. Content is organized using HTML5 (Hyper Text Markup Language). Next step of the design process is presentation of the content. Presentation is what 
+makes the overall design "pretty" and is organized by CSS3 (Cascading Style Sheets). The third and final step of the design process is making the webpage interactive. Interaction provides the user with the ability to engage in an immersive experience 
+that delivers satisfaction. The interaction is organized by a scripting language called JavaScript.
+
+Breakdown
+The course is structured into Lectures, Homework, Quizzes, and a Group Project. 
+
+Lectures
+
+Lectures are given twice a week for a two-hour period. During lectures students explore 
+the core technologies through examples. The examples are basic, leaving the students the ability to strengthen their design knowledge. While, also given students the opportunity to explore deeper concepts on their own.
+
+Homework
+
+Homework provides the students with an opportunity to apply the concepts and skills learned during lecture. Homework assignments are expected to be done on an individual basis unless otherwise explicitly discussed in lecture. Each homework assignment will build upon the previous work, so you are expected to make corrections as warranted to be able to fulfill the additional requirements provided.Each homework project will be assessed on: meeting requirements; design quality; content; and code structure.
+
+Quizzes
+
+There will be two quizzes and a final exam. The quizzes will focus on concepts, definitions, and syntax for each unit of the course. The final exam will focus on lectures, readings, discussion, projects, and homework leading up to the course conclusion. Students will be expected to be able to create and use artifacts related to the class projects. A study guide will be provided for the quizzes and the final exam on the class website.
+
+Group Project
+
+Projects will involve small teams of 2-3 students using approved methods and creating
+a small interactive media application. Students will be expected to apply media production processes, good design concepts, and the skills learned as part of the course to your projects. Teams will be responsible for providing regular project status(each sprint cycle) throughout the quarter, culminating in a class demonstration during the final class sessions. You will have the opportunity to provide peer review of your team members with regards to the quality and performance of the collaboration, effort, and work products; this peer review will have an impact on individual grades with respect to the project. Projects will be graded on the ability to meet schedule deadlines and in the overall scope and quality of the final project delivered.
+
+Syallbus
+link=come back later. 
+
+Required Text Books 
+
+• Cruse, D. and Jordan, L. (2011). HTML5 Multimedia Development Cookbook, Packt
+Publishing. ISBN: 978-1849691048
+link = http://www.amazon.com/HTML5-Multimedia-Development-Cookbook-ebook/dp/B005I4JFTU/ref=sr_1_1?s=books&ie=UTF8&qid=1369438453&sr=1-1&keywords=HTML5+Multimedia+Development+Cookbook
+
+• Devlin, I. (2011). HTML5 Multimedia: Develop and Design, Peachpit Press. ISBN:
+9780321793935
+link= http://www.amazon.com/HTML5-Multimedia-Develop-Design-ebook/dp/B0064CZ3ZA/ref=sr_1_1?s=books&ie=UTF8&qid=1369438505&sr=1-1&keywords=HTML5+Multimedia%3A+Develop+and+Design
+
+• Haverbeke, M. (2011). Eloquent JavaScript: A Modern Introduction to Programming,
+No Starch Press. ISBN: 978-1593272821
+link= http://www.amazon.com/Eloquent-JavaScript-Introduction-Programming-ebook/dp/B004OEJNQ0/ref=sr_1_1?s=books&ie=UTF8&qid=1369438544&sr=1-1&keywords=Eloquent+JavaScript
+
+
+Learning Goals
+
+• Conversant on technologies used to design and build interactive media applications!
+• Understand and apply basic programming constructs such as functions, data types and variables, conditionals, and loops using a scripting language!
+• Describe and use standard formats for structuring and presenting content!
+• Describe and create multimedia assets using standard lossless and lossy formats!
+• Build simple interactive media projects that incorporate programming, content, multimedia assets, and presentation!
+• Describe and follow common processes and tools used for managing team projects
