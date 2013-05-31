@@ -3,19 +3,15 @@
 <head>
 	<meta charset = "UTF-8">
 	<meta name = "viewport" content = "width=device-width, initial-scale=1.0">
-
 	
-	<title>UWB | CSS 233 Interactive Media Technologies</title>
+	<title>UWB | CSS 233 | Browsers</title>
 	
-	<link type = "text/css" rel = "stylesheet" href = "GrandSlideShow/grandSlideShow.css" />
-	<link type = "text/css" rel = "stylesheet" href = "index.css" />
-	<link type = "text/css" rel = "stylesheet" href = "Base Files/base.css" />
-	<link type = "text/css" rel = "stylesheet" href = "Base Files/dropDownNav.css" />
+	<link type = "icon" href = "../../Pictures/favicon.ico" />
+	
+	<link type = "text/css" rel = "stylesheet" href = "../../Base Files/base.css" />
+	<link type = "text/css" rel = "stylesheet" href = "../../Base Files/dropDownNav.css" />
 	
 	<script type = "text/javascript" src = "index.js"></script>
-	<script type = "text/javascript" src = "GrandSlideShow/speedVector.js"></script>
-	<script type = "text/javascript" src = "GrandSlideShow/domFunctions.js"></script>
-	<script type = "text/javascript" src = "GrandSlideShow/grandSlideShow.js"></script>
 </head>
 <body onload = "initialize();">
 	<div class = "mainWrapper backgroundColor" style = "margin-top:0px; z-index: 2;">
@@ -23,17 +19,17 @@
 	
 		<div id = "mainHeader">
 			<div class = "UWBLogo">
-				<a href = "http://uwb.edu" title = "UWB Home Page"><img src = "Pictures/uwbLogoGoldNoText.png" alt = "University of Washington Bothell" /></a>
+				<a href = "http://uwb.edu" title = "UWB Home Page"><img src = "../../Pictures/uwbLogoGoldNoText.png" alt = "University of Washington Bothell" /></a>
 			</div><!-- end of div.UWBLogo -->
 			
 			<div class = "title">
-				<a href = "" title = "Home"><h1>CSS 233</h1></a>
-				<a href = "" title = "Home"><h2>Interactive Media Technologies</h2></a>
+				<a href = "../../" title = "Home"><h1>CSS 233</h1></a>
+				<a href = "../../" title = "Home"><h2>Interactive Media Technologies</h2></a>
 			</div><!-- end of div.title -->
 			
 			<form class = "searchBox">
 				<label for = "searchField">Search</label>
-				<input id = "searchBox" name = "searchField" type = "search" value = "Search" /> 
+				<input id = "searchBox" name = "searchField" type = "search" value = "Search" />
 			</form><!-- end of form.searchBox -->
 			
 			<nav class = "dropDown">
@@ -58,6 +54,7 @@
 						</div><!-- end of div.dropItem -->
 					</div><!-- end of div.dropContainer -->
 				</div><!-- end of div.topLevel -->
+				
 				<div class = "topLevel">
 					<a href = "#">Course Resources</a>
 					
@@ -95,19 +92,19 @@
 						</div><!-- end of div.dropItem -->
 						
 						<div class = "dropItem">
-							<a href = "Resources/Browsers/">Web Browsers</a>
+							<a href = "#">Web Browsers</a>
 								
 							<div class = "dropContainer">
 								<div class = "dropItem">
-									<a href = "Resources/Browsers/Chrome/">Chrome</a>
+									<a href = "https://www.google.com/intl/en/chrome/browser/" target = "_blank">Chrome</a>
 								</div><!-- end of div.dropItem-->
 								
 								<div class = "dropItem">
-									<a href = "Resources/Browsers/Firefox/">Firefox</a>
+									<a href = "http://www.mozilla.org/en-US/firefox/new/" target = "_blank">Firefox</a>
 								</div><!-- end of div.dropItem-->
 								
 								<div class = "dropItem">
-									<a href = "Resources/Browsers/Safari/">Safari</a>
+									<a href = "http://support.apple.com/kb/dl1531" target = "_blank">Safari</a>
 								</div><!-- end of div.dropItem-->
 							</div><!-- end of div.dropContainer -->						
 						</div><!-- end of div.dropItem -->
@@ -124,6 +121,9 @@
 									<a href = "http://notepad-plus-plus.org/download/v6.3.3.html" target = "_blank">Notepad++ (Text Editor)</a>
 								</div><!-- end of div.dropItem-->
 								
+								<div class = "dropItem">
+									<a href = "https://www.google.com/intl/en/chrome/browser/" target = "_blank">Chrome (Web Browser)</a>
+								</div><!-- end of div.dropItem-->
 							</div><!-- end of div.dropContainer -->						
 						</div><!-- end of div.dropItem -->
 						
@@ -139,18 +139,18 @@
 						</div><!-- end of div.dropItem -->
 					</div><!-- end of div.dropContainer -->
 				</div><!-- end of div.topLevel -->
+				
 				<div class = "topLevel">
 					<a href = "#">Project Management</a>
-					
 					<div class = "dropContainer">
 						<div class = "dropItem">
 							<a href = "#">Drop Item</a>
 						</div><!-- end of div.dropItem -->
 					</div><!-- end of div.dropContainer -->
 				</div><!-- end of div.topLevel -->
+				
 				<div class = "topLevel">
-					<a href = "#">Media Mutt Community</a>
-					
+					<a href = "#">Community</a>
 					<div class = "dropContainer">
 						<div class = "dropItem">
 							<a href = "#">Drop Item</a>
@@ -163,145 +163,107 @@
 	
 	<div class = "mainWrapper" style = "margin-top: 10px; overflow: auto;">
 		<div id = "mainContent">
-			<div id = "mainSlideShow" class = "grandSlideShow">
-				<div class = "slides">
-					<img class = "content" src = "Pictures/Slide Show/1.jpg" alt = "" />
-					<img class = "content" src = "Pictures/Slide Show/2.jpg" alt = "" />
-					<img class = "content" src = "Pictures/Slide Show/3.jpg" alt = "" />
-					<img class = "content" src = "Pictures/Slide Show/2.jpg" alt = "" />
-					<img class = "content" src = "Pictures/Slide Show/1.jpg" alt = "" />
-					<div class = "description">
-						This is a test description
-					</div>
-					<div class = "description">
-						This is a testadf af adsf description
-					</div>
-					<div class = "description">
-						This is a test 444444 description
-					</div>
-					<div class = "description">
-						This is a test dfadsrfadfadsf description
-					</div>
-					<div class = "description">
-						This is a test jklikjlkl;u;kl description
-					</div>
-				</div>
-				<div class = "wrapper">
-					<div class = "controls"></div>
-				</div><!-- end of div.wrapper -->
-			</div><!-- end of div#mainSlideShow.grandSlideShow -->
-			
-			<header class = "center columnsHeader">
-				<h2>Relevant Information</h2>
+			<header class = "columnsHeader">
+				<h2 class = "center">Web Browsers</h2>
 			</header><!-- end of header -->
 			
 			<div class = "columnWrapper">
 				<section style = "min-height: 500px;">
 					<header>
-						<h4>HTML5</h4>
+						<h4>Google Chrome</h4>
 					</header><!-- end of header -->
 					
-					<hr />
-					
-					<div style = "min-height: 180px; overflow: auto;">
-						<img src = "Pictures/html5Logo.png" alt = "HTML5" />
+					<div style = "min-height: 250px; overflow: auto;">
+						<img src = "../../Pictures/googleChromeIcon.png" alt = "Google Chrome" />
 						
 						<p>
-							Hypertext Markup Language (HTML) is a markup language
-							for structuring and presenting content for the Web and a core
-							technology of the internet.
+							Google Chrome is a freeware web browser that focuses on security, speed, 
+							and simplicity. It is developed by Google and utilizes the WebKit layout 
+							engine (Chrome v28+ will use Blink, a fork of WebKit, except on iOS) 
+							and the V8 JavaScript Rendering Engine.
 						</p>
 					</div>
 					
+					<div class = "center">
+						<a href = "https://www.google.com/intl/en/chrome/browser/" target = "_blank"><input type = "button" value = "Download Chrome" /></a>
+					</div>
+					
+					<br />
+					
 					<p>
 						<ul>
-							<header>HTML gives authors the means to:</header>
-							<li>Publish online documents with headings, text, tables, lists, photos, etc.</li>
-							<li>Retrieve online information via hypertext links, at the click of a button.</li>
-							<li>Design forms for conducting transactions with remote services, for use in searching for information, making reservations, ordering products, etc.</li>
-							<li>Include spread-sheets, video clips, sound clips, and other applications directly in their documents.</li>
+							<header>Google Chrome's Features:</header>
+							<li>Available for a variety of platforms; Windows, OS X, Linux, iOS, and Android</li>
+							<li>Comes prebundled with DevTools, a useful web developer tool that provides JavaScript debugging as well as many other capabilities.</li>
+							<li>Application performance and JavaScript speeds declared to be the fastest among web browsers at time of release.</li>
 						</ul>
 					</p>
-				</section><!-- end of section -->
-				
-				<section>
-					<header>
-						<h4>Portfolios</h4>
-					</header><!-- end of header -->
-					
-					<hr />
-					
-					This section is set aside for CSS 233 students to
-					showcase their latest class projects and designs.
 				</section><!-- end of section -->
 			</div><!-- end of div.columnWrapper -->
 			
 			<div class = "columnWrapper centerColumn">
 				<section style = "min-height: 500px;">
 					<header>
-						<h4>CSS 3</h4>
+						<h4>Safari</h4>
 					</header><!-- end of header -->
 					
-					<hr />
-					
-					<div style = "min-height: 180px; overflow: auto;">
-						<img src = "Pictures/css3Logo.png" alt = "HTML5" />
+					<div style = "min-height: 250px; overflow: auto;">
+						<img src = "../../Pictures/safariIcon.png" alt = "Safari" />
 						
 						<p>
-							Cascading Style Sheets (CSS) is a style sheet language
-							used for describing the presentation semantics of a document
-							written in a markup language. 
+							Safari is an Apple Inc. web browser whose original purpose was to 
+							provide a defualt browser for Mac OS X. It utilizes Apple's own 
+							WebKit to render both layout and JavaScript. The two bundled technologies 
+							that come with WebKit that perform these tasks are WebCore and JavaScriptCore.
 						</p>
 					</div>
 					
+					<div class = "center">
+						<a href = "http://support.apple.com/kb/dl1531" target = "_blank"><input type = "button" value = "Download Safari" /></a>
+					</div>
+					
+					<br />
+					
 					<p>
 						<ul>
-							<header>CSS gives the author the means to:</header>
-							<li>The affect the presentation of a web page by changing colors, layout, and fonts.</li>
-							<li>Adapt the web page to the screen size of the device viewing the page.</li>
-							<li>Change the layout of multiple pages of a site through independent "stylesheets"</li>
+							<header>Safari's Features:</header>
+							<li>Available for Windows, OS X, and iOS.</li>
+							<li>Comes prebundled with the Web Inspector, a DOM Inspector-like utility that developers browse the DOM of a web page.</li>
 						</ul>
 					</p>
-				</section><!-- end of section -->
-				
-				<section>
-					<header>
-						<h4>Publishing</h4>
-					</header><!-- end of header -->
-					
-					<hr />
-					
-					This section is reserved for students to learn more
-					aobut The Next and publishing their student works.
 				</section><!-- end of section -->
 			</div><!-- end of div.columnWrapper -->
 			
 			<div class = "columnWrapper">
 				<section style = "min-height: 500px;">
 					<header>
-						<h4>JavaScript</h4>
+						<h4>Firefox</h4>
 					</header><!-- end of header -->
 					
-					<hr />
+					<div style = "min-height: 250px; overflow: auto;">
+						<img src = "../../Pictures/firefoxIcon.png" alt = "Firefox" />
+						
+						<p>
+							Firefox is a freeware web browser that focuses on current and anticipated web 
+							standards. It is developed by the Mozilla Foundation and utilizes the Gecko layout 
+							engine and the IonMonkey (OdinMonkey Firefox v22+) JavaScript Rendering Engine.
+						</p>
+					</div>
 					
-					<img src = "Pictures/jsLogo.png" alt = "HTML5" />
+					<div class = "center">
+						<a href = "http://www.mozilla.org/en-US/firefox/new/" target = "_blank"><input type = "button" value = "Download Firefox" /></a>
+					</div>
 					
-					JavaScript is a scripting language used to enable web
-					authors to design interactive sites. 
-				</section><!-- end of section -->
-				
-				<section>
-					<header>
-						<h4>The Center</h4>
-					</header><!-- end of header -->
+					<br />
 					
-					<hr />
-					
-					The Center serves as a real-world and virtual hub for 
-					collaboration in research partnerships, student projects, 
-					educational innovation and entrepreneurial opportunities.  
-					This is a dynamic environment where design, art, narrative, 
-					computer science and education converge.
+					<p>
+						<ul>
+							<header>Firefox's Features:</header>
+							<li>Available for a variety of platforms; Windows, OS X, Linux, and Android</li>
+							<li>Comes prebundled with the DOM Inspector, a useful web developer tool that allows web developers to detect HTML errors</li>
+							<li>As of February 11, 2011, Firefox has no security vulnerabilities.</li>
+						</ul>
+					</p>
 				</section><!-- end of section -->
 			</div><!-- end of div.columnWrapper -->
 		</div><!-- end of div#mainContent -->
@@ -319,5 +281,5 @@
 			<small><a href = "#">Contact</a></small>
 		</div><!-- end of div#mainFooter -->
 	</div><!-- end of div.mainWrapper -->
-</body>
+</body><!-- end of body -->
 </html>

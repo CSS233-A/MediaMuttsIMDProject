@@ -28,16 +28,20 @@ function GrandSlideShow(_container, _indicatorPaths, _transitionType, _delayTick
 {
 	//Begin Object-wide Variable Declarations
 	slides = {
-		TRANSITION:		"FADE",
+		TRANSITION:			"FADE",
 		
 		previous:			0,
 		current:			0,
 		next:				0,
+		
 		container:			null,
 		content:			null,
 		description:		null,
 		controlsContainer:	null,
-		indicators:			new Array()
+		
+		indicators:			new Array(),
+		
+		isPaused:			false
 	};
 	
 	//DO NOT CHANGE THE ORDER, but it is OK to add to the list
@@ -60,19 +64,23 @@ function GrandSlideShow(_container, _indicatorPaths, _transitionType, _delayTick
 	};
 	
 	//Begin Data Processing
-	if (_indicatorPaths != null 
-		&& _indicatorPaths[0] 
-		&& _indicatorPaths[1] 
-		&& typeof(_indicatorPaths[0]) == "string" 
-		&& typeof(_indicatorPaths[1]) == "string")
+	if (_indicatorPaths != null)
 	{
 		slides.indicators.onSrc = _indicatorPaths[0];
 		slides.indicators.offSrc = _indicatorPaths[1];
+		slides.indicators.pauseOnSrc = _indicatorPaths[2];
+		slides.indicators.pauseOffSrc = _indicatorPaths[3];
+		slides.indicators.playOnSrc = _indicatorPaths[4];
+		slides.indicators.pauseOffSrc = _indicatorPaths[5];
 	}
 	else
 	{
 		slides.indicators.onSrc = "GrandSlideShow/slideIndicatorOn.png";
 		slides.indicators.offSrc = "GrandSlideShow/slideIndicatorOff.png";
+		slides.indicators.pauseOnSrc = "GrandSlideShow/pauseOn.png";
+		slides.indicators.pauseOffSrc = "GrandSlideShow/pauseOff.png";
+		slides.indicators.playOnSrc = "GrandSlideShow/playOn.png";
+		slides.indicators.playOffSrc = "GrandSlideShow/playOff.png";
 	}
 	
 	if (_transitionType != null || typeof(_transitionType) == "string" || _transitionType != "")
@@ -149,6 +157,42 @@ function GrandSlideShow(_container, _indicatorPaths, _transitionType, _delayTick
 		{className: "controls"}
 	)[0];
 	
+	slides.indicators.pauseButton = domFunctions.newChild(
+		slides.controlsContainer,
+		"img"
+	);
+	
+	slides.indicators.pauseButton.src = slides.indicators.pauseOffSrc;
+	slides.indicators.pauseButton.id = "grandSlideShowPauseButton"; //To allow the pong game to pause the slide show
+	slides.indicators.pauseButton.addEventListener(
+		"mouseover",
+		function()
+		{
+			this.src = slides.indicators.pauseOnSrc;
+		},
+		true
+	);
+	slides.indicators.pauseButton.addEventListener(
+		"mouseout",
+		function()
+		{
+			if (!slides.isPaused)
+				this.src = slides.indicators.pauseOffSrc;
+		},
+		true
+	);
+	slides.indicators.pauseButton.addEventListener(
+		"mousedown",
+		function()
+		{
+			slides.isPaused = true;
+			
+			this.src = slides.indicators.pauseOnSrc;
+			slides.indicators.playButton.src = slides.indicators.playOffSrc;
+		},
+		true
+	);
+	
 	for (var i = 0, j = slides.content.length; i < j; i++)
 	{
 		slides.indicators.push(
@@ -212,13 +256,49 @@ function GrandSlideShow(_container, _indicatorPaths, _transitionType, _delayTick
 		);
 	}
 	
+	slides.indicators.playButton = domFunctions.newChild(
+		slides.controlsContainer,
+		"img"
+	);
+	
+	slides.indicators.playButton.src = slides.indicators.playOnSrc;
+	slides.indicators.playButton.addEventListener(
+		"mouseover",
+		function()
+		{
+			this.src = slides.indicators.playOnSrc;
+		},
+		true
+	);
+	slides.indicators.playButton.addEventListener(
+		"mouseout",
+		function()
+		{
+			if (slides.isPaused)
+				this.src = slides.indicators.playOffSrc;
+		},
+		true
+	);
+	slides.indicators.playButton.addEventListener(
+		"mousedown",
+		function()
+		{
+			slides.isPaused = false;
+			
+			slides.indicators.pauseButton.src = slides.indicators.pauseOffSrc;
+			
+			ticks.current = ticks.DELAY;
+		},
+		true
+	);
+	
 	this.process = function()
 	{
-		if (ticks.current < ticks.DELAY)
+		if (ticks.current < ticks.DELAY && !slides.isPaused)
 			ticks.current++;
-		else if (TRANSITION_TYPES.indexOf(slides.TRANSITION) == 0) //slides.transition == "FADE";
+		else if (TRANSITION_TYPES.indexOf(slides.TRANSITION) == 0 && ticks.current >= ticks.DELAY) //slides.transition == "FADE";
 			fadeTransition();
-		else if (TRANSITION_TYPES.indexOf(slides.TRANSITION) == 1) //slides.transition == "SLIDE";
+		else if (TRANSITION_TYPES.indexOf(slides.TRANSITION) == 1 && ticks.current >= ticks.DELAY) //slides.transition == "SLIDE";
 			slideTransition();
 		else
 			ticks.current = 0;
@@ -268,25 +348,25 @@ function GrandSlideShow(_container, _indicatorPaths, _transitionType, _delayTick
 	
 	function slideTransition()
 	{
-		if (Math.abs(slides.content[slides.next].left) < Math.pow(slideSpeed.current.xSpeed, 2) / 2)
+		if (Math.abs(slides.content[slides.next].left) < Math.pow(slideSpeed.current.x(), 2) / 2)
 		{
 			slideSpeed.current.setComponentSpeeds(
-				slideSpeed.current.xSpeed - slideSpeed.DELTA.xSpeed,
-				slideSpeed.current.ySpeed - slideSpeed.DELTA.ySpeed
+				slideSpeed.current.x() - slideSpeed.DELTA.x(),
+				slideSpeed.current.y() - slideSpeed.DELTA.y()
 			);
 		}
-		else if (slideSpeed.current.xSpeed < slideSpeed.MAX.xSpeed)
+		else if (slideSpeed.current.x() < slideSpeed.MAX.x())
 		{
 			slideSpeed.current.setComponentSpeeds(
-				slideSpeed.current.xSpeed + slideSpeed.DELTA.xSpeed,
-				slideSpeed.current.ySpeed + slideSpeed.DELTA.ySpeed
+				slideSpeed.current.x() + slideSpeed.DELTA.x(),
+				slideSpeed.current.y() + slideSpeed.DELTA.y()
 			);
 		}
 		else
 		{
 			slideSpeed.current.setComponentSpeeds(
-				slideSpeed.MAX.xSpeed,
-				slideSpeed.MAX.ySpeed
+				slideSpeed.MAX.x(),
+				slideSpeed.MAX.y()
 			);
 		}
 		
@@ -297,7 +377,7 @@ function GrandSlideShow(_container, _indicatorPaths, _transitionType, _delayTick
 					Math.abs(slides.content[slides.next].left) 
 					/ slides.content[slides.next].left
 				) 
-				* slideSpeed.current.xSpeed
+				* slideSpeed.current.x()
 			);
 			
 			if (i < slides.description.length)
