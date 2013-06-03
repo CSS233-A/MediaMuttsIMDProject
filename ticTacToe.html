@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+  <html>
+		<head>
+			<title>Tic Tac Toe</title>
+			<script>
+				var c, canvas;
+				var turn = 1; 
+				
+				window.onload = function(){
+					canvas = document.getElementById("canvas");
+					c = canvas.getContext("2d");
+					
+					draw();
+				}
+				
+				var moves = [];
+				
+				window.onclick = function(e){
+					if(e.pageX < 500 && e.pageY < 500){
+						var cX = Math.floor(e.pageX/(500/3));
+						var cY = Math.floor(e.pageY/(500/3));
+						
+						var alreadyClicked = false; 
+						
+						for(i in moves){
+							if(moves[i][0] == cX && moves[i][1] == cY){
+								alreadyClicked = true;
+							}
+						}
+						
+						if(alreadyClicked == false){
+							moves[(moves.length)] = [cX, cY, turn];
+							turn = turn*-1;
+							draw();
+							checkWin();
+						}
+					}
+				}
+				
+				function checkWin(){
+					for(i in moves){
+						var horz = 0;
+						var vert = 0;
+						var tlDiag = 0;
+						var trDiag = 0;
+						
+						for(n in moves){
+							if(moves[n][2] == moves[i][2]){ 
+								if((moves[n][0] == moves[i][0]+1 || moves[n][0] == moves[i][0]-1) && moves[n][1] == moves[i][1]){
+									horz++;
+								}
+								if((moves[n][1] == moves[i][1]+1 || moves[n][1] == moves[i][1]-1) && moves[n][0] == moves[i][0]){
+									vert++;
+								}
+								if((moves[n][0] == moves[i][0]-1 && moves[n][1] == moves[i][1]-1) || (moves[n][0] == moves[i][0]+1 && moves[n][1] == moves[i][1]+1)){
+									tlDiag++;
+								}
+								if((moves[n][0] == moves[i][0]-1 && moves[n][1] == moves[i][1]+1) || (moves[n][0] == moves[i][0]+1 && moves[n][1] == moves[i][1]-1)){
+									trDiag++;
+								}
+							}
+							if(horz > 1 || vert > 1 || tlDiag > 1 || trDiag > 1){
+								alert("You won!");
+							}
+						}
+					}
+				}
+				
+				var bg = new Image();
+				var x = new Image();
+				var o = new Image();
+				bg.src = "ttt_board.png";
+				x.src = "ttt_x.png";
+				o.src = "ttt_o.png";
+				
+				function draw(){
+					c.clearRect(0, 0, 500, 500);
+					
+					c.drawImage(bg, 0, 0);
+					
+					for(i in moves){
+						if(moves[i][2] == 1){
+							c.drawImage(x, Math.floor(moves[i][0]*(500/3)+10), Math.floor(moves[i][1]*(500/3)+10));
+						}else{
+							c.drawImage(o, Math.floor(moves[i][0]*(500/3)+10), Math.floor(moves[i][1]*(500/3)+10));
+						}
+					}
+				};
+			
+			</script>
+		</head>
+		<body>
+			<canvas id="canvas" width="500px" height="500px"></canvas>
+		</body>
+	</html>
