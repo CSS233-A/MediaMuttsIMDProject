@@ -39,7 +39,13 @@ a
 	color:#e3e3e3;
 	text-decoration:none;
 }
-a:hover
+div#mainContent a
+{
+	color: #335CD6;
+}
+a:hover,
+
+div#mainContent a:hover
 {
 	color:#edda0c;
 }
@@ -306,9 +312,24 @@ div.columnWrapper > section img
 	padding-top: 10px;
 	padding-bottom: 20px;
 	
+	border-bottom: 1px solid #999999;
+}
+.columnsFooter
+{
+	padding-top: 20px;
+	padding-bottom: 10px;
+	
+	border-top: 1px solid #999999;
+}
+.columnsHeader h2
+{
 	font-size: 24px;
 	
-	border-bottom: 1px solid #999999;
+	margin: auto;
+}
+.columnsHeader p
+{
+	text-align: left;
 }
 
 .centerColumn
